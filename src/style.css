@@ -4,3 +4,90 @@
 @media(max-width:1100px){.dashboard-grid{grid-template-columns:1fr}.right-column{display:grid;grid-template-columns:1fr 1fr}.hero-copy{width:66%}.hero-illustration{width:38%}.stat{padding:15px 12px}.page{padding:27px}.topbar{padding:0 27px}}
 @media(max-width:720px){#app{display:block}.sidebar{position:static;width:100%;padding:15px;display:block}.brand{font-size:19px}.side-label,.side-bottom{display:none}.sidebar nav{display:flex;gap:4px;overflow:auto;margin-top:14px}.nav-link{flex:none;padding:0 10px;font-size:10px;height:36px}.nav-link span{font-size:15px}.nav-link b{display:none}main{margin:0;width:100%}.topbar{height:52px;padding:0 18px}.crumb{font-size:8px}.page{padding:22px 18px}.hero{min-height:330px}.hero-copy{width:100%;padding:25px}.hero h1{font-size:32px}.hero-copy p{max-width:300px}.hero-illustration{opacity:.45;width:55%;height:145px;top:auto;pointer-events:none}.hero-actions{position:relative;z-index:2;gap:12px;flex-wrap:wrap}.stat-row{grid-template-columns:1fr 1fr}.stat:nth-child(2):after{display:none}.stat{padding:14px}.stat strong{font-size:17px}.dashboard-grid{gap:18px}.topic-grid,.study-grid,.practice-grid{grid-template-columns:1fr}.right-column{grid-template-columns:1fr}.page-heading h1{font-size:32px}.progress-summary{grid-template-columns:1fr 1fr}.progress-summary>div{padding:16px}.break-row{grid-template-columns:36px 1fr 55px 25px}.break-row .bar{display:none}.result-banner{align-items:start;gap:20px;flex-direction:column}.quiz-header .eyebrow{display:none}.question-card{padding:22px}.question-card h1{font-size:25px}.flash-controls span{display:none}.date{display:none}}
 .example-sign{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:14px;color:var(--muted);font-size:9px;font-weight:700;letter-spacing:1px}.example-sign svg{width:54px;height:54px}.question-sign{margin:14px 0}.question-sign svg{width:76px;height:76px}
+
+/* Comfortable reading and touch targets at every size. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);overflow-wrap:break-word}
+main,.page,.dashboard-grid,.topics-panel,.right-column,.practice-card,.question-card,.review{min-width:0}
+.btn{min-height:44px;white-space:normal;text-align:center;line-height:1.35}
+.nav-link{min-height:44px;height:auto;line-height:1.3}
+.top-actions button{min-width:44px;min-height:44px}
+.answer{min-height:54px;font-size:14px;line-height:1.5}
+.answer>span{flex:none}
+.answer i{flex:none}
+.topic-body strong,.break-row strong{font-size:14px}
+.topic-body small,.topic-meta,.stat small,.focus-card p,.goal-card p,.manual-note,.side-art p,.side-note,.review small{font-size:12px;line-height:1.5}
+.hero-copy p,.section-heading p,.page-heading p,.practice-card p,.question-card p,.review p,.notice{font-size:14px;line-height:1.6}
+.hero-kicker,.side-label,.eyebrow,.quiz-progress,.flash-label{font-size:10px}
+.btn,.nav-link,.text-link,.view-all,.inline-button,.break-row small,.flash-controls span,.quiz-header a{font-size:13px}
+.break-row button{min-height:44px;min-width:44px}
+.break-row{grid-template-columns:40px minmax(0,1fr) minmax(0,30%) 45px 44px}
+.review-title strong{line-height:1.5}
+.flashcard{touch-action:manipulation}
+button,a{-webkit-tap-highlight-color:rgba(40,95,80,.18)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Tablets use a full-width header instead of sacrificing space to a sidebar. */
+@media(max-width:1024px){
+  #app{display:block}
+  .sidebar{position:static;width:100%;padding:16px clamp(16px,3vw,28px) 12px;display:block;border-right:0;border-bottom:1px solid var(--line)}
+  .side-label,.side-bottom{display:none}
+  .sidebar nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin-top:14px}
+  .nav-link{margin:0;padding:8px;justify-content:center;gap:6px;text-align:center;font-size:12px}
+  .nav-link span{width:auto;flex:none}
+  .nav-link b{display:none}
+  main{margin:0;width:100%}
+  .topbar{padding-inline:clamp(16px,3vw,28px)}
+  .page{padding-inline:clamp(16px,3vw,28px)}
+}
+@media(max-width:720px){
+  .sidebar{padding:14px 16px 12px}
+  .sidebar nav{grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;margin-top:12px}
+  .nav-link{min-width:0;min-height:48px;padding:7px 5px;font-size:11px;gap:4px;white-space:normal}
+  .nav-link span{font-size:16px}
+  .topbar{min-height:54px;height:auto;padding:4px 16px;gap:8px}
+  .crumb{min-width:0;line-height:1.4}
+  .crumb span{padding:0 5px}
+  .top-actions{gap:3px;flex:none}
+  .avatar{display:none}
+  .page{padding:22px 16px calc(36px + env(safe-area-inset-bottom, 0px))}
+  .hero{min-height:0}
+  .hero-copy{padding:24px 20px 30px}
+  .hero h1{font-size:clamp(29px,8vw,36px)}
+  .hero-copy p{font-size:14px}
+  .hero-illustration{opacity:.25;z-index:0}
+  .hero-actions{align-items:flex-start}
+  .text-link{min-height:44px;display:inline-flex;align-items:center}
+  .stat-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stat{min-width:0;gap:8px;padding:13px 10px}
+  .stat-icon{width:34px;height:34px;font-size:18px}
+  .stat strong{font-size:17px}
+  .stat small{font-size:11px}
+  .section-heading{align-items:flex-start;gap:12px;flex-wrap:wrap}
+  .topic-grid,.study-grid,.practice-grid{grid-template-columns:minmax(0,1fr)}
+  .right-column{grid-template-columns:minmax(0,1fr)}
+  .progress-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .progress-summary>div{min-width:0;padding:16px}
+  .progress-summary>div:last-child{grid-column:1/-1}
+  .break-row{grid-template-columns:36px minmax(0,1fr) 42px 44px;gap:8px;padding:12px}
+  .break-row .bar{display:none}
+  .break-row .topic-icon{width:36px;height:36px}
+  .question-card{padding:20px 16px}
+  .question-card h1{font-size:clamp(23px,6vw,28px);line-height:1.2}
+  .quiz-container{margin:24px auto}
+  .quiz-footer{gap:10px}
+  .quiz-footer .btn{padding-inline:12px}
+  .flashcard{min-height:310px;padding:24px 16px}
+  .flash-controls{gap:8px}
+  .flash-controls .btn{padding-inline:12px}
+  .result-banner{align-items:stretch;gap:20px;flex-direction:column}
+  .result-banner>div:last-child{display:flex;flex-wrap:wrap;gap:8px}
+  .review p,.review small{margin-left:0}
+}
+@media(max-width:360px){
+  .crumb{font-size:8px;letter-spacing:.6px}
+  .hero-actions{display:grid;gap:2px}
+  .stat{align-items:flex-start}
+  .stat-icon{display:none}
+  .flash-controls .btn{font-size:11px}
+}
