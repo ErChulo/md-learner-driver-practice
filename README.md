@@ -10,6 +10,17 @@ A browser-only Maryland learner permit study app. The question bank is original 
 
 The manual states that the knowledge test has 25 questions and a 20-minute limit (page 7). The app uses the requested goal of 22 correct answers; this is presented as a practice goal, not a claim about the official passing threshold.
 
+## Cómo usar la aplicación
+
+Abre [Permit Path](https://md-learner-driver-practice.vercel.app/) en tu navegador. El idioma inicial es español; usa el botón **ES/EN** para cambiarlo y el botón de tema para alternar entre claro y oscuro.
+
+1. En **Temas de estudio**, elige un tema para practicar sus preguntas y consultar las páginas del manual.
+2. En **Tarjetas de señales**, toca o haz clic en la tarjeta para girarla y revelar su significado. También puedes usar Enter o la barra espaciadora. Usa **Anterior** y **Siguiente señal** para recorrerlas. Si tu dispositivo tiene activada la opción de movimiento reducido, el cambio es inmediato.
+3. En **Exámenes de práctica**, elige una prueba de 25 preguntas con límite de 20 minutos o una sin límite. Al terminar, revisa tus respuestas y las referencias al manual. La meta de práctica es 22 respuestas correctas.
+4. En **Mi progreso**, consulta tus resultados y tus áreas de mejora, o borra el progreso guardado. **Información general** contiene por separado el tema de obtener la licencia.
+
+El progreso se guarda en este navegador y dispositivo; no se sincroniza entre dispositivos. Borrar los datos del navegador también elimina el progreso.
+
 ## Run locally
 
 ```sh
