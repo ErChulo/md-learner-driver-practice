@@ -10,9 +10,10 @@ The manual states that the knowledge test has 25 questions and a 20-minute limit
 npm ci
 npm run dev
 npm run build
+npm test
 ```
 
-Progress is stored in IndexedDB on the current browser/device. Language and theme preferences use local storage. No accounts or backend are used. Clearing browser data removes progress. Tests are assembled from a small bank of 30 original questions; they are an aid, **not a complete assessment of every detail in the manual**. Study the whole manual. The Spanish manual supplied by the user is copyrighted and is not redistributed in this repository.
+Progress is stored in IndexedDB on the current browser/device. Language and theme preferences use local storage. No accounts or backend are used. Clearing browser data removes progress. Full tests draw 25 questions from 132 original bilingual questions across eight clusters covering all ten numbered manual sections. Each full test contains three questions per cluster and a fourth from one randomly selected cluster. The bank does not cover every individual detail in the manual; study the complete manual as well. Study the whole manual. The Spanish manual supplied by the user is copyrighted and is not redistributed in this repository.
 
 ## Deployment
 
