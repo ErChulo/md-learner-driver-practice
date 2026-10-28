@@ -1,6 +1,6 @@
 import {clusters,questions,signs} from './data.js';
 const $=s=>document.querySelector(s); const app=$('#app');
-let lang=localStorage.getItem('language')||'en', theme=localStorage.getItem('theme')||'light';
+let lang=localStorage.getItem('language')||'es', theme=localStorage.getItem('theme')||'light';
 let history=[], db, quiz=null, timer=null, signIndex=0, flipped=false;
 const t=(en,es)=>lang==='es'?es:en;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
