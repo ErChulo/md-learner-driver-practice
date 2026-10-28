@@ -10,12 +10,12 @@ export function shuffle(items, random = Math.random) {
 
 // Assign the remainder to randomly selected topics. Each topic contributes either
 // floor(count / topics) or ceil(count / topics) unique questions.
-export function balancedSample(questions, topics, count = 25, random = Math.random) {
+export function balancedSample(questions, topics, count = 25, random = Math.random, topicFor = q => q.cluster) {
   if (!topics.length || count < 0 || !Number.isInteger(count)) throw new Error('Invalid sample size or topics');
   const base = Math.floor(count / topics.length);
   const extraTopics = new Set(shuffle(topics, random).slice(0, count % topics.length));
   const selection = topics.flatMap(topic => {
-    const pool = questions.filter(q => q.cluster === topic);
+    const pool = questions.filter(q => topicFor(q) === topic);
     const amount = base + (extraTopics.has(topic) ? 1 : 0);
     if (pool.length < amount) throw new Error(`Not enough questions for topic ${topic}`);
     return shuffle(pool, random).slice(0, amount);

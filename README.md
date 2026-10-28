@@ -13,7 +13,7 @@ npm run build
 npm test
 ```
 
-Progress is stored in IndexedDB on the current browser/device. Language and theme preferences use local storage. No accounts or backend are used. Clearing browser data removes progress. Full tests draw 25 questions from 210 original bilingual questions across eight clusters covering all ten numbered manual sections. Each full test contains three questions per cluster and a fourth from one randomly selected cluster. The bank does not cover every individual detail in the manual; study the complete manual as well. The Spanish manual supplied by the user is copyrighted and is not redistributed in this repository.
+Progress is stored in IndexedDB on the current browser/device. Language and theme preferences use local storage. No accounts or backend are used. Clearing browser data removes progress. The 210 original bilingual questions are split into 125 curated exam questions and 85 optional general-information questions. Full tests select 25 questions only from the three requested exam topics: traffic signs, road rules, and safe driving. Each test has eight questions from each topic and one extra question from a randomly selected topic. Licensing and other non-exam material is available separately as general information and does not affect exam-topic statistics. The bank does not cover every individual detail in the manual; study the complete manual as well. The Spanish manual supplied by the user is copyrighted and is not redistributed in this repository.
 
 ## Deployment
 
