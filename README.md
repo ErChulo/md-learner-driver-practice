@@ -1,5 +1,11 @@
 # Permit Path
 
+[![Tests and build](https://github.com/ErChulo/md-learner-driver-practice/actions/workflows/ci.yml/badge.svg?branch=arena%2F3b977c89-md-learner-driver-practice)](https://github.com/ErChulo/md-learner-driver-practice/actions/workflows/ci.yml?query=branch%3Aarena%2F3b977c89-md-learner-driver-practice)
+[![Vercel availability](https://img.shields.io/website?url=https%3A%2F%2Fmd-learner-driver-practice.vercel.app%2F&label=Vercel)](https://md-learner-driver-practice.vercel.app/)
+[![GitHub Pages availability](https://img.shields.io/website?url=https%3A%2F%2Ferchulo.github.io%2Fmd-learner-driver-practice%2F&label=GitHub%20Pages)](https://erchulo.github.io/md-learner-driver-practice/)
+
+The tests and build badge tracks this working branch. The site badges report HTTP availability, not content correctness or test results.
+
 A browser-only Maryland learner permit study app. The question bank is original and uses the uploaded **Maryland Driver's Manual, October 2025** as its sole factual source. References in the app use the manual's printed page numbers. The app is not affiliated with the Maryland Motor Vehicle Administration and its questions are not official exam questions.
 
 The manual states that the knowledge test has 25 questions and a 20-minute limit (page 7). The app uses the requested goal of 22 correct answers; this is presented as a practice goal, not a claim about the official passing threshold.
