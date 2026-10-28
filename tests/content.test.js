@@ -4,7 +4,7 @@ import { questions, clusters, signs } from '../src/data.js';
 import { balancedSample } from '../src/sampling.js';
 
 test('question bank has complete bilingual records and references', () => {
-  assert.ok(questions.length >= 100);
+  assert.ok(questions.length >= 210);
   assert.equal(new Set(questions.map(q => q.id)).size, questions.length);
   for (const q of questions) {
     assert.ok(clusters.some(c => c.id === q.cluster));
@@ -16,7 +16,17 @@ test('question bank has complete bilingual records and references', () => {
       assert.ok(q[language].a.every(Boolean));
     }
   }
-  for (const c of clusters) assert.ok(questions.filter(q => q.cluster === c.id).length >= 4);
+  for (const c of clusters) assert.ok(questions.filter(q => q.cluster === c.id).length >= 15);
+  // Keep historical IDs stable when the bank is extended: saved answers use these IDs.
+  assert.equal(questions[0].en.q, 'How many questions are on the knowledge test?');
+  assert.equal(questions[131].es.q, '¿Qué debe hacer si está cansado o tiene sueño mientras conduce?');
+  for (const language of ['es', 'en']) {
+    const prompts = questions.map(q => q[language].q.trim().toLocaleLowerCase(language));
+    assert.equal(new Set(prompts).size, prompts.length, `Repeated ${language} question`);
+  }
+  // The bank must continue to include each of the ten numbered manual sections.
+  const sections = [[7,8],[9,13],[15,19],[21,29],[31,38],[39,41],[43,49],[51,53],[55,58],[59,63]];
+  for (const [first,last] of sections) assert.ok(questions.some(q => q.page >= first && q.page <= last), `Missing section ${first}–${last}`);
   assert.equal(signs.length, 9);
 });
 

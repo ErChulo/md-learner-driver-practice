@@ -1,3 +1,4 @@
+import { manualDetails } from './manual-details.js';
 // Additional original questions. Facts and printed page numbers come from the supplied manual.
 // [topic, page, English question, English choices (correct first), Spanish question, Spanish choices]
 export const extra = [
@@ -109,3 +110,6 @@ extra.push(
 ['behavior',40,'How can prescription medicines affect driving?',['Some can impair alertness, coordination and reaction time','All medicines improve driving','Prescription drugs never affect driving','Only illegal drugs can impair driving'],'¿Cómo pueden afectar a la conducción los medicamentos recetados?',['Algunos pueden afectar la alerta, coordinación y tiempo de reacción','Todos los medicamentos mejoran la conducción','Los medicamentos recetados nunca afectan','Solo las drogas ilegales pueden afectar']],
 ['behavior',41,'What should you do if you are tired or sleepy while driving?',['Rest or change drivers','Drive faster to arrive sooner','Close your eyes briefly','Follow the vehicle ahead more closely'],'¿Qué debe hacer si está cansado o tiene sueño mientras conduce?',['Descansar o cambiar de conductor','Conducir más rápido para llegar antes','Cerrar los ojos brevemente','Seguir más cerca al vehículo de adelante']]
 );
+
+// Append only: existing question IDs and saved history remain stable.
+extra.push(...manualDetails);
