@@ -1,10 +1,10 @@
 # Permit Path
 
-[![Tests and build](https://github.com/ErChulo/md-learner-driver-practice/actions/workflows/ci.yml/badge.svg?branch=arena%2F3b977c89-md-learner-driver-practice)](https://github.com/ErChulo/md-learner-driver-practice/actions/workflows/ci.yml?query=branch%3Aarena%2F3b977c89-md-learner-driver-practice)
+[![Tests and build](https://github.com/ErChulo/md-learner-driver-practice/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ErChulo/md-learner-driver-practice/actions/workflows/ci.yml?query=branch%3Amain)
 [![Vercel availability](https://img.shields.io/website?url=https%3A%2F%2Fmd-learner-driver-practice.vercel.app%2F&label=Vercel)](https://md-learner-driver-practice.vercel.app/)
 [![GitHub Pages availability](https://img.shields.io/website?url=https%3A%2F%2Ferchulo.github.io%2Fmd-learner-driver-practice%2F&label=GitHub%20Pages)](https://erchulo.github.io/md-learner-driver-practice/)
 
-The tests and build badge tracks this working branch. The site badges report HTTP availability, not content correctness or test results.
+The tests and build badge tracks the main branch. The site badges report HTTP availability, not content correctness or test results.
 
 A browser-only Maryland learner permit study app. The question bank is original and uses the uploaded **Maryland Driver's Manual, October 2025** as its sole factual source. References in the app use the manual's printed page numbers. The app is not affiliated with the Maryland Motor Vehicle Administration and its questions are not official exam questions.
 
@@ -15,7 +15,7 @@ The manual states that the knowledge test has 25 questions and a 20-minute limit
 Abre [Permit Path](https://md-learner-driver-practice.vercel.app/) en tu navegador. El idioma inicial es español; usa el botón **ES/EN** para cambiarlo y el botón de tema para alternar entre claro y oscuro.
 
 1. En **Temas de estudio**, elige un tema para practicar sus preguntas y consultar las páginas del manual.
-2. En **Tarjetas de señales**, toca o haz clic en la tarjeta para girarla y revelar su significado. También puedes usar Enter o la barra espaciadora. Usa **Anterior** y **Siguiente señal** para recorrerlas. Si tu dispositivo tiene activada la opción de movimiento reducido, el cambio es inmediato.
+2. En **Tarjetas de señales**, filtra por categoría y toca o haz clic en la tarjeta para girarla y revelar su significado. Las ilustraciones originales abarcan ejemplos de señales reglamentarias, advertencias, obras, orientación, servicios y semáforos del manual (páginas 21–27). También puedes usar Enter o la barra espaciadora. Usa **Anterior** y **Siguiente señal** para recorrerlas. Si tu dispositivo tiene activada la opción de movimiento reducido, el cambio es inmediato.
 3. En **Exámenes de práctica**, elige una prueba de 25 preguntas con límite de 20 minutos o una sin límite. Al terminar, revisa tus respuestas y las referencias al manual. La meta de práctica es 22 respuestas correctas.
 4. En **Mi progreso**, consulta tus resultados y tus áreas de mejora, o borra el progreso guardado. **Información general** contiene por separado el tema de obtener la licencia.
 
