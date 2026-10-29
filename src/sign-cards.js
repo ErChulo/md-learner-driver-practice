@@ -11,7 +11,7 @@ export const signCategories = [
 ];
 
 export function signArtwork(card, lang = 'es') {
-  if (!card.mutcdCode) {
+  if (card.verificationStatus !== 'VERIFIED' || !card.mutcdCode) {
     return `<span class="sign-unavailable">${lang === 'en' ? 'Verified illustration not available yet' : 'Ilustración verificada aún no disponible'}</span>`;
   }
   const url = new URL(`./assets/traffic-signs/${card.mutcdCode}.svg`, import.meta.url).href;

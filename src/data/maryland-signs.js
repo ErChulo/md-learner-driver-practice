@@ -11,9 +11,10 @@ export default [
     "assetSha256": "a359db7ac7708da4c04df96a2c1ea6ab0b173b42282efb35fecf949a904567ed",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationNote": "The Spanish 2026 manual page 24 shows a blank shape rather than this full sign; the source SVG is a real sign but is not an exact match to that illustration.",
     "en": "Railroad crossing ahead.",
-    "es": "Cruce ferroviario más adelante."
+    "es": "Cruce ferroviario más adelante.",
+    "manualPage2026Es": 24
   },
   {
     "id": "crossbuck",
@@ -26,9 +27,10 @@ export default [
     "assetSha256": "d9487fff7bd252a4600ceafc03fac9cc943c5679afc1779aeaa7cd9f2c90bd84",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationNote": "The Spanish 2026 manual page 24 shows a blank shape rather than this full sign; the source SVG is a real sign but is not an exact match to that illustration.",
     "en": "Railroad crossing location.",
-    "es": "Ubicación de un cruce ferroviario."
+    "es": "Ubicación de un cruce ferroviario.",
+    "manualPage2026Es": 24
   },
   {
     "id": "recreation-shape",
@@ -43,7 +45,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Recreation and cultural interest areas or national forest routes.",
-    "es": "Áreas recreativas y culturales o rutas de bosques nacionales."
+    "es": "Áreas recreativas y culturales o rutas de bosques nacionales.",
+    "manualPage2026Es": 24
   },
   {
     "id": "stop",
@@ -55,10 +58,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R01-01.svg",
     "assetSha256": "616696d7b6d0e14948af629207228d3844fe330e32fd9b282d2156f1bef1f71e",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Stop completely. Yield before proceeding.",
-    "es": "Deténgase por completo. Ceda el paso antes de avanzar."
+    "es": "Deténgase por completo. Ceda el paso antes de avanzar.",
+    "manualPage2026Es": 25
   },
   {
     "id": "yield",
@@ -70,10 +74,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R01-02.svg",
     "assetSha256": "22c93c6ed368dc4df25c86ad5d776650da1dfdb5791f5e2f480d49454f0781f1",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Slow down and yield to pedestrians, cyclists and traffic.",
-    "es": "Reduzca la velocidad y ceda el paso a peatones, ciclistas y vehículos."
+    "es": "Reduzca la velocidad y ceda el paso a peatones, ciclistas y vehículos.",
+    "manualPage2026Es": 25
   },
   {
     "id": "speed-limit",
@@ -85,10 +90,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R02-01.svg",
     "assetSha256": "f434afdfad73f205b4c6462f512c0c84d91be4b824589155754786753937139a",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Do not exceed the posted speed limit.",
-    "es": "No supere el límite de velocidad indicado."
+    "es": "No supere el límite de velocidad indicado.",
+    "manualPage2026Es": 25
   },
   {
     "id": "no-right",
@@ -100,10 +106,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R03-01.svg",
     "assetSha256": "6af4e2af693fc6d933e3481e48e36cd6b286857c6777dc58f7821bf6bdb18bd8",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "No right turn.",
-    "es": "Prohibido girar a la derecha."
+    "es": "Prohibido girar a la derecha.",
+    "manualPage2026Es": 25
   },
   {
     "id": "no-left",
@@ -115,10 +122,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R03-02.svg",
     "assetSha256": "a790d2817280d63cf75e7d07800b40160b7615fe93a51fdfca845cb2ead602e1",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "No left turn.",
-    "es": "Prohibido girar a la izquierda."
+    "es": "Prohibido girar a la izquierda.",
+    "manualPage2026Es": 25
   },
   {
     "id": "no-u",
@@ -130,10 +138,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R03-04.svg",
     "assetSha256": "1ada388b4c9b056e47ae95a32ad2b29c8d2449b08a1287a29fccb1431d2d240b",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "No U-turn.",
-    "es": "Prohibido girar en U."
+    "es": "Prohibido girar en U.",
+    "manualPage2026Es": 25
   },
   {
     "id": "no-turns",
@@ -145,10 +154,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R03-03.svg",
     "assetSha256": "70f6df91692b1bebd7e383bab9cfddb95e7be5c40478b723d0ff08749f912775",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "No turns.",
-    "es": "Prohibido girar."
+    "es": "Prohibido girar.",
+    "manualPage2026Es": 25
   },
   {
     "id": "left-only",
@@ -161,9 +171,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "R03-05 candidate turns right; the 2025 example turns left. Do not mirror it.",
+    "verificationNote": "R03-05 candidate turns right; the Spanish 2026 example turns left. Do not mirror it.",
     "en": "Turn left only.",
-    "es": "Solo se permite girar a la izquierda."
+    "es": "Solo se permite girar a la izquierda.",
+    "manualPage2026Es": 25
   },
   {
     "id": "do-not-enter",
@@ -175,10 +186,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R05-01.svg",
     "assetSha256": "979e959035f839e285a530dabcb09de354ed26d79e197d9006968e5af64f0782",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Do not enter.",
-    "es": "No ingrese."
+    "es": "No ingrese.",
+    "manualPage2026Es": 25
   },
   {
     "id": "no-parking",
@@ -191,9 +203,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "R07-01 uses words and a one-way arrow; the 2025 example has a barred P and two-way arrow.",
+    "verificationNote": "R07-01 uses words and a one-way arrow; the Spanish 2026 example has a barred P and two-way arrow.",
     "en": "No parking.",
-    "es": "Prohibido estacionar."
+    "es": "Prohibido estacionar.",
+    "manualPage2026Es": 25
   },
   {
     "id": "wrong-way",
@@ -205,10 +218,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R05-01A.svg",
     "assetSha256": "9d6542bc6a8fac5143cbefc6dc1a8addbcf2c3cff0e91753dde03a6359946904",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "You are going the wrong way.",
-    "es": "Circula en sentido contrario."
+    "es": "Circula en sentido contrario.",
+    "manualPage2026Es": 25
   },
   {
     "id": "do-not-pass",
@@ -220,10 +234,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R04-01.svg",
     "assetSha256": "f5bbb7a5e0dd2691dbe9a8886600fa9788c1bd9b777fe14afff03808c3c4f0f5",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Do not pass.",
-    "es": "No adelante a otros vehículos."
+    "es": "No adelante a otros vehículos.",
+    "manualPage2026Es": 25
   },
   {
     "id": "keep-right",
@@ -235,10 +250,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R04-07.svg",
     "assetSha256": "77a6703219326cac02102388696fb07e2cd8ce4c8ff8fed8d60078ed1dcb3dc7",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Keep right of the center or traffic island.",
-    "es": "Manténgase a la derecha del centro o de la isla."
+    "es": "Manténgase a la derecha del centro o de la isla.",
+    "manualPage2026Es": 25
   },
   {
     "id": "accessible-parking",
@@ -250,10 +266,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R07-08.svg",
     "assetSha256": "740fa0a85d1bffee5cfc6ec4b3e4f92ba04c74c005fed92d1cc031e4a2484316",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Parking reserved for people with disabilities.",
-    "es": "Estacionamiento reservado para personas con discapacidades."
+    "es": "Estacionamiento reservado para personas con discapacidades.",
+    "manualPage2026Es": 25
   },
   {
     "id": "center-turn",
@@ -265,10 +282,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R03-09B.svg",
     "assetSha256": "ff26014086707161629bbfa925092f2010c3fd645e210120dd624afb3d7bbc7a",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "The center lane is for left turns from either direction.",
-    "es": "El carril central es para giros a la izquierda desde ambos sentidos."
+    "es": "El carril central es para giros a la izquierda desde ambos sentidos.",
+    "manualPage2026Es": 25
   },
   {
     "id": "hov",
@@ -283,7 +301,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "No exact, license-verified match established; do not substitute a similar graphic.",
     "en": "The lane is reserved for vehicles meeting the posted occupancy requirement.",
-    "es": "El carril es para vehículos que cumplen el mínimo de ocupantes indicado."
+    "es": "El carril es para vehículos que cumplen el mínimo de ocupantes indicado.",
+    "manualPage2026Es": 25
   },
   {
     "id": "one-way",
@@ -298,7 +317,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "No exact, license-verified match established; do not substitute a similar graphic.",
     "en": "Travel only in the direction of the arrow.",
-    "es": "Circule solo en el sentido de la flecha."
+    "es": "Circule solo en el sentido de la flecha.",
+    "manualPage2026Es": 25
   },
   {
     "id": "left-yield",
@@ -310,10 +330,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R10-12.svg",
     "assetSha256": "1d25d7f8a60aad79cc5f77a0fd64fff7bf13bbd8820bb5c4c01503306e6e57e7",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Yield when turning left on green.",
-    "es": "Al girar a la izquierda con luz verde, ceda el paso."
+    "es": "Al girar a la izquierda con luz verde, ceda el paso.",
+    "manualPage2026Es": 25
   },
   {
     "id": "bike-lane",
@@ -325,10 +346,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R03-17.svg",
     "assetSha256": "f54e2ced89795a03456c8eabb9c704839233fd4de872181ec8b4931f3a07c273",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Bicycle lane.",
-    "es": "Ciclovía."
+    "es": "Ciclovía.",
+    "manualPage2026Es": 25
   },
   {
     "id": "no-turn-red",
@@ -341,9 +363,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "R10-11 lacks the red circle and red word shown in the 2025 example.",
+    "verificationNote": "R10-11 lacks the red circle and red word shown in the Spanish 2026 example.",
     "en": "Do not turn on a red light.",
-    "es": "No gire con luz roja."
+    "es": "No gire con luz roja.",
+    "manualPage2026Es": 25
   },
   {
     "id": "stop-ahead",
@@ -356,9 +379,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "W03-01 candidate is orange; the 2025 example is yellow. The 2026 graphic needs inspection.",
+    "verificationNote": "W03-01 candidate is orange; the Spanish 2026 example is yellow. The 2026 graphic needs inspection.",
     "en": "Stop sign ahead.",
-    "es": "Señal de alto más adelante."
+    "es": "Señal de alto más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "yield-ahead",
@@ -370,10 +394,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W03-02.svg",
     "assetSha256": "bb8e25aa2437bb919625aa3d031401375cc28a8967a8985f4bdfe0feb7dacbb2",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Yield sign ahead.",
-    "es": "Señal de ceder el paso más adelante."
+    "es": "Señal de ceder el paso más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "signal-ahead",
@@ -385,10 +410,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W03-03.svg",
     "assetSha256": "c5540dead93fe341e6ac6e23132174458e6288e8a3a8e899afdc6c2c35d73497",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Traffic signal ahead.",
-    "es": "Semáforo más adelante."
+    "es": "Semáforo más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "sharp-right",
@@ -400,10 +426,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W01-01.svg",
     "assetSha256": "2faf5b478a02670720c1b35222ebe3dccdc11c9108f98e6fcd5c12c4f0338f02",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Sharp right turn ahead.",
-    "es": "Giro brusco a la derecha más adelante."
+    "es": "Giro brusco a la derecha más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "pedestrian",
@@ -415,10 +442,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W11-02.svg",
     "assetSha256": "3ac2a1374e982cfdf4de711a18977a3a274d15c826069b7af3933903e88bf711",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Pedestrian crossing ahead.",
-    "es": "Cruce peatonal más adelante."
+    "es": "Cruce peatonal más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "truck-crossing",
@@ -430,10 +458,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W08-06.svg",
     "assetSha256": "bab0d6f14ee5110335a02da38670341ba07062ea17391912940dddd763f2a589",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Truck crossing ahead.",
-    "es": "Cruce de camiones más adelante."
+    "es": "Cruce de camiones más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "advisory-speed",
@@ -445,10 +474,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W13-01P.svg",
     "assetSha256": "460be84b39ea3b805f79708c3cade7849b76ef26160eea679b1e924e4357fa07",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Advisory speed for the condition ahead.",
-    "es": "Velocidad recomendada para la condición más adelante."
+    "es": "Velocidad recomendada para la condición más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "exit-speed",
@@ -461,9 +491,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "W13-02 lacks the directional arrow shown in the 2025 example.",
+    "verificationNote": "W13-02 lacks the directional arrow shown in the Spanish 2026 example.",
     "en": "Advisory speed on an exit ramp.",
-    "es": "Velocidad recomendada en la rampa de salida."
+    "es": "Velocidad recomendada en la rampa de salida.",
+    "manualPage2026Es": 26
   },
   {
     "id": "no-passing-zone",
@@ -475,10 +506,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W14-03.svg",
     "assetSha256": "cafff6fe5015c06e9c932d189947a0d37de9b829102c07ffd2c7b1dae71f8560",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Beginning of a no-passing zone.",
-    "es": "Inicio de una zona donde no se puede adelantar."
+    "es": "Inicio de una zona donde no se puede adelantar.",
+    "manualPage2026Es": 26
   },
   {
     "id": "merge",
@@ -490,10 +522,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W04-01.svg",
     "assetSha256": "855ea52563ec0775e5dfbfded500f5edde54a00a806bd5402fa30040b1ff01a7",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Traffic merges ahead.",
-    "es": "Incorporación de tránsito más adelante."
+    "es": "Incorporación de tránsito más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "divided-start",
@@ -505,10 +538,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W06-01.svg",
     "assetSha256": "60ed9c9bcabb5394d3f89402d388ba3e33cce7d1f754e7aa7948ba66412bee8d",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Divided highway begins ahead.",
-    "es": "Comienza una vía dividida más adelante."
+    "es": "Comienza una vía dividida más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "divided-end",
@@ -520,10 +554,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W06-02.svg",
     "assetSha256": "12d82ddcd257fb789a13775eb57cc7c95fb26e3044fe60b5d8a910fdbcc08a85",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Divided highway ends ahead.",
-    "es": "Termina la vía dividida más adelante."
+    "es": "Termina la vía dividida más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "curve-right",
@@ -536,9 +571,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "W01-02 candidate curves left; the 2025 example curves right. Do not mirror it.",
+    "verificationNote": "W01-02 candidate curves left; the Spanish 2026 example curves right. Do not mirror it.",
     "en": "Curve to the right ahead.",
-    "es": "Curva a la derecha más adelante."
+    "es": "Curva a la derecha más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "reverse-turn",
@@ -550,10 +586,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W01-03.svg",
     "assetSha256": "08f51ee9019ddc4438388be495617158cec64add33f2dfc99ffaa95fdca6375c",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Sharp turns ahead.",
-    "es": "Giros bruscos más adelante."
+    "es": "Giros bruscos más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "winding",
@@ -565,10 +602,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W01-05.svg",
     "assetSha256": "f4faf91a1af9d1b34c5680aee7d04cdebf67093cd92d08c2f2725b4805768e7e",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Winding road ahead.",
-    "es": "Camino con curvas más adelante."
+    "es": "Camino con curvas más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "lane-ends",
@@ -580,10 +618,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W04-02.svg",
     "assetSha256": "1699eb72b7450b2ffbe8aeef9f2084152aafd8111733adb6db4785815da0d316",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Lane ends ahead.",
-    "es": "El carril termina más adelante."
+    "es": "El carril termina más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "steep-hill",
@@ -595,10 +634,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W07-01.svg",
     "assetSha256": "648241b8daf31ea5030fa7da7061049eacbb27e9d93db0c5368e2de44b72897e",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Steep hill ahead.",
-    "es": "Pendiente pronunciada más adelante."
+    "es": "Pendiente pronunciada más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "crossroad",
@@ -610,10 +650,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W02-01.svg",
     "assetSha256": "f5257d74e456c92cffae40487dce5d488f4839a761a53417f7e30d283a5bdb56",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Intersection ahead.",
-    "es": "Intersección más adelante."
+    "es": "Intersección más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "t-intersection",
@@ -625,10 +666,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W02-04.svg",
     "assetSha256": "816567c17f6363a60fc6b3560b352bdeabf031403bb80a7bf549f8a7f457bd1c",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "T-intersection ahead.",
-    "es": "Intersección en T más adelante."
+    "es": "Intersección en T más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "roundabout",
@@ -640,10 +682,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W02-06.svg",
     "assetSha256": "24e823a3fbc5a77b98f8d4dd2036592d43727b2eacad107a6e345d72c9e6b095",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Roundabout ahead.",
-    "es": "Rotonda más adelante."
+    "es": "Rotonda más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "merge-left",
@@ -658,7 +701,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "No exact, license-verified match established; do not substitute a similar graphic.",
     "en": "Lane ends; merge left.",
-    "es": "Fin del carril; incorpórese a la izquierda."
+    "es": "Fin del carril; incorpórese a la izquierda.",
+    "manualPage2026Es": 26
   },
   {
     "id": "slippery",
@@ -670,10 +714,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W08-05.svg",
     "assetSha256": "4930207b0aab5e6630bb1759b369eefa2ef515e17859e461a88ccfe0bd72772b",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Road may be slippery when wet.",
-    "es": "El pavimento puede estar resbaladizo cuando está mojado."
+    "es": "El pavimento puede estar resbaladizo cuando está mojado.",
+    "manualPage2026Es": 26
   },
   {
     "id": "side-road",
@@ -685,10 +730,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W02-02.svg",
     "assetSha256": "4b883bf0e38beb3170f49958ab62c61395bd308e3732e121bea7203ce507114a",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "A side road joins ahead.",
-    "es": "Una calle se incorpora más adelante."
+    "es": "Una calle se incorpora más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "bike-ped",
@@ -700,10 +746,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W11-15.svg",
     "assetSha256": "d9a98ada25bf2ae950ea311162982b83e8bdd3c68de5bde0a9bded921d0151de",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Bicycle and pedestrian crossing.",
-    "es": "Cruce de peatones y ciclistas."
+    "es": "Cruce de peatones y ciclistas.",
+    "manualPage2026Es": 26
   },
   {
     "id": "trail",
@@ -718,7 +765,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "No exact, license-verified match established; do not substitute a similar graphic.",
     "en": "Trail crossing.",
-    "es": "Cruce de senderos."
+    "es": "Cruce de senderos.",
+    "manualPage2026Es": 26
   },
   {
     "id": "deer",
@@ -730,10 +778,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W11-03.svg",
     "assetSha256": "8c4a68076a7c5a72ec103fd5572a3da1f5852c93feae2c7a39460705250a0978",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Deer or other wildlife may cross.",
-    "es": "Pueden cruzar venados u otros animales silvestres."
+    "es": "Pueden cruzar venados u otros animales silvestres.",
+    "manualPage2026Es": 26
   },
   {
     "id": "flagger",
@@ -745,10 +794,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/W20-07.svg",
     "assetSha256": "b1366931c76619bf60a023f0d8ef7bd69db7b9c5f4d238904c3b1d1eba2e1bf0",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Flagger ahead. Be ready to stop.",
-    "es": "Banderillero más adelante. Prepárese para detenerse."
+    "es": "Banderillero más adelante. Prepárese para detenerse.",
+    "manualPage2026Es": 26
   },
   {
     "id": "detour",
@@ -763,7 +813,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "No exact, license-verified match established; do not substitute a similar graphic.",
     "en": "Follow the detour.",
-    "es": "Siga el desvío."
+    "es": "Siga el desvío.",
+    "manualPage2026Es": 26
   },
   {
     "id": "road-work",
@@ -776,9 +827,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "W20-01 reads ROAD WORK AHEAD; the 2025 example reads ROAD WORK 1000 FT.",
+    "verificationNote": "W20-01 reads ROAD WORK AHEAD; the Spanish 2026 example reads ROAD WORK 1000 FT.",
     "en": "Road work ahead.",
-    "es": "Obras viales más adelante."
+    "es": "Obras viales más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "rail-t",
@@ -791,9 +843,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "W10-04 depicts the tracks beside the T, unlike the 2025 example.",
+    "verificationNote": "W10-04 depicts the tracks beside the T, unlike the Spanish 2026 example.",
     "en": "Railroad crossing before a T-intersection.",
-    "es": "Cruce ferroviario antes de una intersección en T."
+    "es": "Cruce ferroviario antes de una intersección en T.",
+    "manualPage2026Es": 26
   },
   {
     "id": "school",
@@ -806,9 +859,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "S01-01 lacks the SCHOOL plaque present in the 2025 example; a composition must be verified.",
+    "verificationNote": "S01-01 lacks the SCHOOL plaque present in the Spanish 2026 example; a composition must be verified.",
     "en": "School crossing ahead.",
-    "es": "Cruce escolar más adelante."
+    "es": "Cruce escolar más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "school-bus",
@@ -820,10 +874,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/S03-01.svg",
     "assetSha256": "454352ea6bf6ed46124a3e2821a059f7adfca07406a67f75093174adf1a51817",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "School bus stop ahead.",
-    "es": "Parada de autobús escolar más adelante."
+    "es": "Parada de autobús escolar más adelante.",
+    "manualPage2026Es": 26
   },
   {
     "id": "work-begin",
@@ -838,7 +893,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "No exact, license-verified match established; do not substitute a similar graphic.",
     "en": "Work zone begins.",
-    "es": "Comienza la zona de trabajo."
+    "es": "Comienza la zona de trabajo.",
+    "manualPage2026Es": 26
   },
   {
     "id": "work-end",
@@ -853,7 +909,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "No exact, license-verified match established; do not substitute a similar graphic.",
     "en": "Active work zone ends.",
-    "es": "Termina la zona de trabajo activa."
+    "es": "Termina la zona de trabajo activa.",
+    "manualPage2026Es": 26
   },
   {
     "id": "work-flashing",
@@ -868,7 +925,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "No exact, license-verified match established; do not substitute a similar graphic.",
     "en": "Active work zone when flashing; increased fines apply.",
-    "es": "Zona de trabajo activa cuando parpadea; aumentan las multas."
+    "es": "Zona de trabajo activa cuando parpadea; aumentan las multas.",
+    "manualPage2026Es": 26
   },
   {
     "id": "overhead-dest",
@@ -883,7 +941,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Overhead sign showing destinations and lanes.",
-    "es": "Señal elevada con destinos y carriles."
+    "es": "Señal elevada con destinos y carriles.",
+    "manualPage2026Es": 27
   },
   {
     "id": "lane-directions",
@@ -898,7 +957,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Overhead lane-use directions.",
-    "es": "Direcciones de uso de los carriles."
+    "es": "Direcciones de uso de los carriles.",
+    "manualPage2026Es": 27
   },
   {
     "id": "straight-only",
@@ -913,7 +973,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Go straight only.",
-    "es": "Solo siga de frente."
+    "es": "Solo siga de frente.",
+    "manualPage2026Es": 27
   },
   {
     "id": "right-only",
@@ -925,10 +986,11 @@ export default [
     "sourceUrl": "https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R03-05.svg",
     "assetSha256": "1dac556cb5c60693ee3fa4652544051665002858d3582759d5b753573a83d668",
     "license": "FHWA public-domain sign artwork; repository metadata/tooling CC0-1.0 (see sources)",
-    "verificationStatus": "UNRESOLVED",
-    "verificationNote": "Matches the supplied 2025 manual illustration; the 2026 illustration was not accessible for visual verification.",
+    "verificationStatus": "VERIFIED",
+    "verificationNote": "Visually compared with the corresponding illustration in the supplied Spanish October 2026 manual; wording, orientation, colors, shape, and meaning match.",
     "en": "Turn right only.",
-    "es": "Solo gire a la derecha."
+    "es": "Solo gire a la derecha.",
+    "manualPage2026Es": 27
   },
   {
     "id": "hov-overhead",
@@ -943,7 +1005,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "HOV lane: follow the posted occupancy and time restrictions.",
-    "es": "Carril HOV: respete la ocupación y el horario indicados."
+    "es": "Carril HOV: respete la ocupación y el horario indicados.",
+    "manualPage2026Es": 27
   },
   {
     "id": "straight-or-right",
@@ -958,7 +1021,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Lane allows going straight or turning right.",
-    "es": "El carril permite seguir de frente o girar a la derecha."
+    "es": "El carril permite seguir de frente o girar a la derecha.",
+    "manualPage2026Es": 27
   },
   {
     "id": "ezpass",
@@ -973,7 +1037,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "A branded logo is excluded until rights and an exact authorized source are confirmed.",
     "en": "Electronic toll collection.",
-    "es": "Cobro electrónico de peaje."
+    "es": "Cobro electrónico de peaje.",
+    "manualPage2026Es": 27
   },
   {
     "id": "last-exit",
@@ -988,7 +1053,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Last exit before the toll.",
-    "es": "Última salida antes del peaje."
+    "es": "Última salida antes del peaje.",
+    "manualPage2026Es": 27
   },
   {
     "id": "interstate",
@@ -1003,7 +1069,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Interstate shield is excluded from the source collection and its rights require verification.",
     "en": "Interstate route marker.",
-    "es": "Marcador de ruta interestatal."
+    "es": "Marcador de ruta interestatal.",
+    "manualPage2026Es": 27
   },
   {
     "id": "us-route",
@@ -1018,7 +1085,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "United States route marker.",
-    "es": "Marcador de ruta de Estados Unidos."
+    "es": "Marcador de ruta de Estados Unidos.",
+    "manualPage2026Es": 27
   },
   {
     "id": "state-route",
@@ -1033,7 +1101,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Maryland state route marker.",
-    "es": "Marcador de ruta estatal de Maryland."
+    "es": "Marcador de ruta estatal de Maryland.",
+    "manualPage2026Es": 27
   },
   {
     "id": "park-ride",
@@ -1048,7 +1117,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Parking and public transportation.",
-    "es": "Estacionamiento y transporte público."
+    "es": "Estacionamiento y transporte público.",
+    "manualPage2026Es": 27
   },
   {
     "id": "destination",
@@ -1063,7 +1133,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Destination and exit information.",
-    "es": "Información de destinos y salidas."
+    "es": "Información de destinos y salidas.",
+    "manualPage2026Es": 27
   },
   {
     "id": "services",
@@ -1078,7 +1149,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Services available near an exit.",
-    "es": "Servicios disponibles cerca de una salida."
+    "es": "Servicios disponibles cerca de una salida.",
+    "manualPage2026Es": 27
   },
   {
     "id": "lodging",
@@ -1093,7 +1165,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Lodging.",
-    "es": "Alojamiento."
+    "es": "Alojamiento.",
+    "manualPage2026Es": 27
   },
   {
     "id": "hospital",
@@ -1108,7 +1181,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Hospital.",
-    "es": "Hospital."
+    "es": "Hospital.",
+    "manualPage2026Es": 27
   },
   {
     "id": "fuel",
@@ -1123,7 +1197,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Fuel.",
-    "es": "Combustible."
+    "es": "Combustible.",
+    "manualPage2026Es": 27
   },
   {
     "id": "food",
@@ -1138,7 +1213,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Food.",
-    "es": "Comida."
+    "es": "Comida.",
+    "manualPage2026Es": 27
   },
   {
     "id": "airport",
@@ -1153,7 +1229,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Airport.",
-    "es": "Aeropuerto."
+    "es": "Aeropuerto.",
+    "manualPage2026Es": 27
   },
   {
     "id": "train",
@@ -1168,7 +1245,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Train station.",
-    "es": "Estación de trenes."
+    "es": "Estación de trenes.",
+    "manualPage2026Es": 27
   },
   {
     "id": "mile",
@@ -1183,7 +1261,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "Exact 2026 image, including local wording, symbol, color, and rights, has not been verified.",
     "en": "Mile marker: identifies your location on an interstate.",
-    "es": "Marcador de milla: identifica su ubicación en una interestatal."
+    "es": "Marcador de milla: identifica su ubicación en una interestatal.",
+    "manualPage2026Es": 27
   },
   {
     "id": "red",
@@ -1196,9 +1275,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Steady red: stop and remain stopped while the light is red.",
-    "es": "Rojo constante: deténgase y permanezca detenido mientras la luz esté roja."
+    "es": "Rojo constante: deténgase y permanezca detenido mientras la luz esté roja.",
+    "manualPage2026Es": 21
   },
   {
     "id": "yellow",
@@ -1211,9 +1291,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Steady yellow: the signal is changing to red; stop safely if you can.",
-    "es": "Amarillo constante: la señal cambia a rojo; deténgase si puede hacerlo de forma segura."
+    "es": "Amarillo constante: la señal cambia a rojo; deténgase si puede hacerlo de forma segura.",
+    "manualPage2026Es": 21
   },
   {
     "id": "green",
@@ -1226,9 +1307,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Steady green: proceed cautiously, yielding to pedestrians and traffic already in the intersection.",
-    "es": "Verde constante: avance con precaución y ceda el paso a peatones y vehículos que ya están en la intersección."
+    "es": "Verde constante: avance con precaución y ceda el paso a peatones y vehículos que ya están en la intersección.",
+    "manualPage2026Es": 22
   },
   {
     "id": "red-arrow",
@@ -1241,9 +1323,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Steady red arrow: stop and remain stopped for the indicated direction.",
-    "es": "Flecha roja constante: deténgase y permanezca detenido para la dirección indicada."
+    "es": "Flecha roja constante: deténgase y permanezca detenido para la dirección indicada.",
+    "manualPage2026Es": 22
   },
   {
     "id": "yellow-arrow",
@@ -1256,9 +1339,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Steady yellow arrow: the turn permission is ending. Slow down and proceed cautiously.",
-    "es": "Flecha amarilla constante: el permiso de giro está por terminar. Reduzca la velocidad y avance con precaución."
+    "es": "Flecha amarilla constante: el permiso de giro está por terminar. Reduzca la velocidad y avance con precaución.",
+    "manualPage2026Es": 22
   },
   {
     "id": "green-arrow",
@@ -1271,9 +1355,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Steady green arrow: proceed cautiously in the arrow direction; yield to pedestrians and traffic already in the intersection.",
-    "es": "Flecha verde constante: avance con precaución en el sentido indicado; ceda el paso a peatones y vehículos que ya están en la intersección."
+    "es": "Flecha verde constante: avance con precaución en el sentido indicado; ceda el paso a peatones y vehículos que ya están en la intersección.",
+    "manualPage2026Es": 22
   },
   {
     "id": "flashing-red",
@@ -1286,9 +1371,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Flashing red: stop, yield, and proceed when clear. At a railroad crossing, wait for flashing to stop.",
-    "es": "Rojo intermitente: deténgase, ceda el paso y avance cuando esté despejado. En un cruce ferroviario, espere a que deje de parpadear."
+    "es": "Rojo intermitente: deténgase, ceda el paso y avance cuando esté despejado. En un cruce ferroviario, espere a que deje de parpadear.",
+    "manualPage2026Es": 22
   },
   {
     "id": "flashing-yellow",
@@ -1301,9 +1387,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Flashing yellow: slow down and proceed with caution.",
-    "es": "Amarillo intermitente: reduzca la velocidad y avance con precaución."
+    "es": "Amarillo intermitente: reduzca la velocidad y avance con precaución.",
+    "manualPage2026Es": 22
   },
   {
     "id": "flashing-red-arrow",
@@ -1316,9 +1403,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Flashing red arrow: stop and yield; proceed in the arrow direction when clear.",
-    "es": "Flecha roja intermitente: deténgase y ceda el paso; avance en el sentido indicado cuando esté despejado."
+    "es": "Flecha roja intermitente: deténgase y ceda el paso; avance en el sentido indicado cuando esté despejado.",
+    "manualPage2026Es": 22
   },
   {
     "id": "lane-red-x",
@@ -1331,9 +1419,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Red X: never drive in that lane.",
-    "es": "X roja: nunca conduzca en ese carril."
+    "es": "X roja: nunca conduzca en ese carril.",
+    "manualPage2026Es": 22
   },
   {
     "id": "lane-green",
@@ -1346,9 +1435,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Green arrow: you may use the lane.",
-    "es": "Flecha verde: puede usar el carril."
+    "es": "Flecha verde: puede usar el carril.",
+    "manualPage2026Es": 22
   },
   {
     "id": "lane-yellow-x",
@@ -1361,9 +1451,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Steady yellow X: change lanes as soon as it is safe.",
-    "es": "X amarilla constante: cambie de carril tan pronto como sea seguro."
+    "es": "X amarilla constante: cambie de carril tan pronto como sea seguro.",
+    "manualPage2026Es": 22
   },
   {
     "id": "lane-flashing-x",
@@ -1376,9 +1467,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Flashing yellow X: the lane may be used for a left turn; opposing traffic may share it.",
-    "es": "X amarilla intermitente: puede usar el carril para girar a la izquierda; puede compartirlo con tráfico en sentido contrario."
+    "es": "X amarilla intermitente: puede usar el carril para girar a la izquierda; puede compartirlo con tráfico en sentido contrario.",
+    "manualPage2026Es": 22
   },
   {
     "id": "lane-two-arrows",
@@ -1391,9 +1483,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Opposing left-turn arrows: the lane is shared for left turns.",
-    "es": "Flechas opuestas de giro a la izquierda: el carril se comparte para esos giros."
+    "es": "Flechas opuestas de giro a la izquierda: el carril se comparte para esos giros.",
+    "manualPage2026Es": 22
   },
   {
     "id": "beacon-dark",
@@ -1406,9 +1499,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Pedestrian hybrid beacon dark: proceed with caution.",
-    "es": "Señal peatonal apagada: avance con precaución."
+    "es": "Señal peatonal apagada: avance con precaución.",
+    "manualPage2026Es": 23
   },
   {
     "id": "beacon-flashing-yellow",
@@ -1421,9 +1515,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Pedestrian hybrid beacon flashing yellow: slow down.",
-    "es": "Señal peatonal amarilla intermitente: reduzca la velocidad."
+    "es": "Señal peatonal amarilla intermitente: reduzca la velocidad.",
+    "manualPage2026Es": 23
   },
   {
     "id": "beacon-yellow",
@@ -1436,9 +1531,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Pedestrian hybrid beacon steady yellow: prepare to stop.",
-    "es": "Señal peatonal amarilla constante: prepárese para detenerse."
+    "es": "Señal peatonal amarilla constante: prepárese para detenerse.",
+    "manualPage2026Es": 23
   },
   {
     "id": "beacon-red",
@@ -1451,9 +1547,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Pedestrian hybrid beacon steady red: stop.",
-    "es": "Señal peatonal roja constante: deténgase."
+    "es": "Señal peatonal roja constante: deténgase.",
+    "manualPage2026Es": 23
   },
   {
     "id": "beacon-flashing-red",
@@ -1466,9 +1563,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Pedestrian hybrid beacon flashing red: stop, then proceed with caution.",
-    "es": "Señal peatonal roja intermitente: deténgase y avance con precaución."
+    "es": "Señal peatonal roja intermitente: deténgase y avance con precaución.",
+    "manualPage2026Es": 23
   },
   {
     "id": "ped-walk",
@@ -1481,9 +1579,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Walk: look both ways and begin crossing after traffic has stopped.",
-    "es": "Caminar: mire a ambos lados y comience a cruzar cuando el tránsito se haya detenido."
+    "es": "Caminar: mire a ambos lados y comience a cruzar cuando el tránsito se haya detenido.",
+    "manualPage2026Es": 23
   },
   {
     "id": "ped-hand",
@@ -1496,9 +1595,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Steady raised hand: do not start crossing.",
-    "es": "Mano fija: no comience a cruzar."
+    "es": "Mano fija: no comience a cruzar.",
+    "manualPage2026Es": 23
   },
   {
     "id": "ped-flashing",
@@ -1511,9 +1611,10 @@ export default [
     "assetSha256": null,
     "license": "not established",
     "verificationStatus": "UNRESOLVED",
-    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and 2026 illustration verification are pending.",
+    "verificationNote": "A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending.",
     "en": "Flashing raised hand: do not begin crossing; finish if you have already started.",
-    "es": "Mano intermitente: no comience a cruzar; termine de cruzar si ya comenzó."
+    "es": "Mano intermitente: no comience a cruzar; termine de cruzar si ya comenzó.",
+    "manualPage2026Es": 23
   },
   {
     "id": "shape-octagon",
@@ -1528,7 +1629,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "The manual illustrates a generic shape; an exact appropriately licensed generic shape illustration has not been established.",
     "en": "Octagon: stop.",
-    "es": "Octágono: detención."
+    "es": "Octágono: detención.",
+    "manualPage2026Es": 24
   },
   {
     "id": "shape-triangle",
@@ -1543,7 +1645,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "The manual illustrates a generic shape; an exact appropriately licensed generic shape illustration has not been established.",
     "en": "Triangle: yield.",
-    "es": "Triángulo: ceder el paso."
+    "es": "Triángulo: ceder el paso.",
+    "manualPage2026Es": 24
   },
   {
     "id": "shape-diamond",
@@ -1558,7 +1661,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "The manual illustrates a generic shape; an exact appropriately licensed generic shape illustration has not been established.",
     "en": "Diamond: warning.",
-    "es": "Diamante: advertencia."
+    "es": "Diamante: advertencia.",
+    "manualPage2026Es": 24
   },
   {
     "id": "shape-pennant",
@@ -1573,7 +1677,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "The manual illustrates a generic shape; an exact appropriately licensed generic shape illustration has not been established.",
     "en": "Pennant: no passing.",
-    "es": "Banderín: no adelantar."
+    "es": "Banderín: no adelantar.",
+    "manualPage2026Es": 24
   },
   {
     "id": "shape-rectangle",
@@ -1588,7 +1693,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "The manual illustrates a generic shape; an exact appropriately licensed generic shape illustration has not been established.",
     "en": "Rectangle: regulatory or guide sign.",
-    "es": "Rectángulo: señal reglamentaria u orientativa."
+    "es": "Rectángulo: señal reglamentaria u orientativa.",
+    "manualPage2026Es": 24
   },
   {
     "id": "shape-pentagon",
@@ -1603,7 +1709,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "The manual illustrates a generic shape; an exact appropriately licensed generic shape illustration has not been established.",
     "en": "Pentagon: school zone or crossing.",
-    "es": "Pentágono: zona o cruce escolar."
+    "es": "Pentágono: zona o cruce escolar.",
+    "manualPage2026Es": 24
   },
   {
     "id": "shape-round",
@@ -1618,7 +1725,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "The manual illustrates a generic shape; an exact appropriately licensed generic shape illustration has not been established.",
     "en": "Round: railroad crossing ahead.",
-    "es": "Círculo: cruce ferroviario más adelante."
+    "es": "Círculo: cruce ferroviario más adelante.",
+    "manualPage2026Es": 24
   },
   {
     "id": "shape-crossbuck",
@@ -1633,7 +1741,8 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "The manual illustrates a generic shape; an exact appropriately licensed generic shape illustration has not been established.",
     "en": "Crossbuck: railroad crossing location.",
-    "es": "Cruz ferroviaria: ubicación de un cruce ferroviario."
+    "es": "Cruz ferroviaria: ubicación de un cruce ferroviario.",
+    "manualPage2026Es": 24
   },
   {
     "id": "shape-trapezoid",
@@ -1648,6 +1757,7 @@ export default [
     "verificationStatus": "UNRESOLVED",
     "verificationNote": "The manual illustrates a generic shape; an exact appropriately licensed generic shape illustration has not been established.",
     "en": "Trapezoid: recreation and cultural interest areas or National Forest routes.",
-    "es": "Trapezoide: áreas recreativas y culturales o rutas de bosques nacionales."
+    "es": "Trapezoide: áreas recreativas y culturales o rutas de bosques nacionales.",
+    "manualPage2026Es": 24
   }
 ];

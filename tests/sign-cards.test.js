@@ -17,7 +17,7 @@ test('catalog is synchronized, bilingual and explicit about verification', () =>
     assert.ok(['VERIFIED', 'UNRESOLVED', 'MISMATCH'].includes(s.verificationStatus));
     assert.ok(Number.isInteger(s.manualPage2026));
     if (s.verificationStatus === 'VERIFIED') assert.ok(s.assetPath && s.sourceUrl && s.mutcdCode && s.license);
-    if (!s.mutcdCode) assert.match(signArtwork(s, 'en'), /not available/);
+    if (s.verificationStatus !== 'VERIFIED') assert.match(signArtwork(s, 'en'), /not available/);
   }
 });
 
@@ -49,6 +49,6 @@ test('all sourced assets are intact, local, valid SVG and contain no executable 
     parser.on('closetag', node => { if (node.local.toLowerCase() === 'style') inStyle = false; });
     parser.write(data.toString('utf8')).close();
     assert.ok(root);
-    assert.match(signArtwork(s, 'en'), /<img /);
+    if (s.verificationStatus === 'VERIFIED') assert.match(signArtwork(s, 'en'), /<img /);
   }
 });
