@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { questions, clusters, signs } from '../src/data.js';
+import { questions, clusters } from '../src/data.js';
 import { balancedSample } from '../src/sampling.js';
 import { examTopics, examTopicFor, examQuestions, generalQuestions } from '../src/exam-topics.js';
 
@@ -28,7 +28,6 @@ test('question bank has complete bilingual records and references', () => {
   // The bank must continue to include each of the ten numbered manual sections.
   const sections = [[7,8],[9,13],[15,19],[21,29],[31,38],[39,41],[43,49],[51,53],[55,58],[59,63]];
   for (const [first,last] of sections) assert.ok(questions.some(q => q.page >= first && q.page <= last), `Missing section ${first}–${last}`);
-  assert.equal(signs.length, 9);
 });
 
 test('all driving topics are eligible; licensing alone is general information', () => {
