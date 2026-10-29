@@ -23,7 +23,7 @@ El progreso se guarda en este navegador y dispositivo; no se sincroniza entre di
 
 ## Sign artwork and verification
 
-The [coverage report](docs/MARYLAND_SIGN_COVERAGE.md) and [source notes](docs/TRAFFIC_SIGN_SOURCES.md) describe the current limitations and licensing. The [visual contact sheet](docs/sign-contact-sheet.html) and its [PNG preview](docs/sign-contact-sheet.png) show locally stored candidate assets. The supplied Spanish October 2026 manual was visually reviewed: 39 sign assets match its illustrations, while other entries remain unresolved.
+The [coverage report](docs/MARYLAND_SIGN_COVERAGE.md) and [source notes](docs/TRAFFIC_SIGN_SOURCES.md) describe the current limitations and licensing. The [visual contact sheet](docs/sign-contact-sheet.html) and its [PNG preview](docs/sign-contact-sheet.png) show locally stored candidate assets. The supplied Spanish October 2026 manual was visually reviewed: 52 sign assets match its illustrations, while other entries remain unresolved.
 
 ## Run locally
 

@@ -52,3 +52,20 @@ test('all sourced assets are intact, local, valid SVG and contain no executable 
     if (s.verificationStatus === 'VERIFIED') assert.match(signArtwork(s, 'en'), /<img /);
   }
 });
+
+test('newly sourced signs are verified and use the correct individual assets', () => {
+  const expected = {
+    hospital:'D09-02', fuel:'D09-07', food:'D09-08', lodging:'D09-09',
+    airport:'I03-05', train:'I03-07', mile:'D10-01', detour:'M04-09',
+    'straight-only':'R03-05A', 'straight-or-right':'R03-06',
+    'lane-directions':'R03-08B', 'hov-overhead':'R03-14', 'last-exit':'W16-16P'
+  };
+  for (const [id, code] of Object.entries(expected)) {
+    const card = signCards.find(s => s.id === id);
+    assert.equal(card?.verificationStatus, 'VERIFIED');
+    assert.equal(card.mutcdCode, code);
+    assert.match(signArtwork(card, 'en'), /<img /);
+  }
+  // A right-pointing sign must not silently replace the left-pointing example.
+  assert.equal(signCards.find(s => s.id === 'left-only').verificationStatus, 'UNRESOLVED');
+});
