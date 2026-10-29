@@ -44,8 +44,3 @@ const raw=[
 ['responsibility',61,'What does an anti-lock braking system help prevent?',['Wheels locking during braking','A flat tire','All crashes','Running out of fuel'],'¿Qué ayuda a prevenir el sistema antibloqueo de frenos?',['Que las ruedas se bloqueen al frenar','Una llanta desinflada','Todos los choques','Quedarse sin combustible']]
 ];
 export const questions=[...raw,...extra].map((r,i)=>({id:i,cluster:r[0],page:r[1],en:{q:r[2],a:r[3]},es:{q:r[4],a:r[5]}}));
-export const signs=[
-['octagon','STOP','Octagon','Octágono','Stop completely.','Deténgase por completo.'],['triangle','YIELD','Triangle','Triángulo','Yield to traffic and pedestrians.','Ceda el paso a vehículos y peatones.'],['diamond','!','Diamond','Diamante','Warning: a hazard or condition is ahead.','Advertencia: hay un peligro o condición adelante.'],['circle','R R','Circle','Círculo','A railroad crossing is ahead.','Hay un cruce ferroviario adelante.'],['pentagon','✦','Pentagon','Pentágono','School zone or school crossing.','Zona o cruce escolar.'],['pennant','NO\nPASSING','Pennant','Banderín','The beginning of a no-passing zone.','Inicio de una zona donde no se puede adelantar.'],
-['rectangle','','Rectangle','Rectángulo','A guide or regulatory sign.','Señal orientativa o reglamentaria.'],
-['cross','','Crossbuck','Cruz ferroviaria','The location of a railroad crossing.','Ubicación de un cruce ferroviario.'],
-['trapezoid','','Trapezoid','Trapezoide','Recreation and cultural interest areas or national forest routes.','Áreas recreativas y culturales o rutas de bosques nacionales.']];
