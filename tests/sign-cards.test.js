@@ -8,7 +8,9 @@ import {signCards,signCategories,signArtwork} from '../src/sign-cards.js';
 const json = JSON.parse(readFileSync(new URL('../src/data/maryland-signs.json', import.meta.url)));
 
 test('catalog is synchronized, bilingual and explicit about verification', () => {
-  assert.deepEqual(signCards, json);
+  assert.deepEqual(signCards, json.filter(s => s.verificationStatus === 'VERIFIED' && s.assetPath));
+  assert.ok(signCards.length > 0);
+  for (const category of signCategories.filter(c => c.id !== 'all')) assert.ok(signCards.some(s => s.category === category.id));
   assert.equal(new Set(signCards.map(s => s.id)).size, signCards.length);
   const categories = new Set(signCategories.map(c => c.id));
   for (const s of signCards) {
@@ -22,7 +24,7 @@ test('catalog is synchronized, bilingual and explicit about verification', () =>
 });
 
 test('all sourced assets are intact, local, valid SVG and contain no executable or external content', () => {
-  for (const s of signCards.filter(s => s.assetPath)) {
+  for (const s of json.filter(s => s.assetPath)) {
     const path = new URL('../' + s.assetPath, import.meta.url);
     assert.ok(existsSync(path), `${s.id}: missing asset`);
     const data = readFileSync(path);
@@ -67,5 +69,6 @@ test('newly sourced signs are verified and use the correct individual assets', (
     assert.match(signArtwork(card, 'en'), /<img /);
   }
   // A right-pointing sign must not silently replace the left-pointing example.
-  assert.equal(signCards.find(s => s.id === 'left-only').verificationStatus, 'UNRESOLVED');
+  assert.equal(signCards.find(s => s.id === 'left-only'), undefined);
+  assert.equal(json.find(s => s.id === 'left-only').verificationStatus, 'UNRESOLVED');
 });
