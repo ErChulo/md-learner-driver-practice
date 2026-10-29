@@ -13,3 +13,9 @@ A limited manual spot check against the supplied Spanish October 2026 edition co
 - Headphones, anti-lock brakes and provisional-license sanctions: 29, 112, 202, 207 (pages 59 and 63).
 
 This spot check does not certify all answer choices, exceptions, translations, or any questions not listed above. The remaining questions and bilingual wording still need individual review against the relevant handbook passages before the bank can be described as fully validated.
+
+## Additional review and corrections
+
+The 2026 manual's minimums were checked against pages 10–11 (learner/provisional requirements), page 47 (school buses), page 61 (supervisors), and page 38 (slow-moving vehicles). Questions 36, 72, 93, 94, 121, 136, 139 and 187 now explicitly ask for the minimum and use thresholds as choices; previously, looser “at least” distractors could also be true. Question 106 no longer uses a broader upper limit that was also true of a vehicle traveling 25 mph or less. Both languages were updated. Question IDs remain unchanged.
+
+This is still not a complete, item-by-item validation of all 210 questions and all distractors. In particular, the in-app page citations continue to reference the 2025 edition; the attached 2026 Spanish manual uses different page numbers for later sections. Automated tests cannot establish correctness of the handbook interpretation or page citations.

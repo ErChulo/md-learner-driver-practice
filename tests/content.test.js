@@ -66,3 +66,17 @@ test('every full exam covers all seven driving topics with 3 or 4 questions each
 test('sampling fails clearly rather than silently omitting a topic', () => {
   assert.throws(() => balancedSample([], ['missing'], 25), /Not enough questions/);
 });
+
+test('revised threshold questions explicitly ask for minimums in both languages', () => {
+  for (const id of [36, 72, 93, 94, 121, 136, 139, 187]) {
+    const q = questions.find(item => item.id === id);
+    assert.match(q.en.q, /minimum/i, `English question ${id}`);
+    assert.match(q.es.q, /mínim/i, `Spanish question ${id}`);
+    for (const language of ['en', 'es']) {
+      const answers = q[language].a;
+      assert.equal(new Set(answers).size, 4);
+    }
+  }
+  assert.equal(questions.find(q => q.id === 106).en.a[0], '25 miles per hour or less');
+  assert.ok(!questions.find(q => q.id === 106).en.a.includes('No more than 70 miles per hour'));
+});
