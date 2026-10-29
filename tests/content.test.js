@@ -9,7 +9,7 @@ test('question bank has complete bilingual records and references', () => {
   assert.equal(new Set(questions.map(q => q.id)).size, questions.length);
   for (const q of questions) {
     assert.ok(clusters.some(c => c.id === q.cluster));
-    assert.ok(Number.isInteger(q.page) && q.page >= 7 && q.page <= 63);
+    assert.ok(Number.isInteger(q.page) && q.page >= 7 && q.page <= 65);
     for (const language of ['es', 'en']) {
       assert.ok(q[language].q);
       assert.equal(q[language].a.length, 4);
@@ -26,7 +26,7 @@ test('question bank has complete bilingual records and references', () => {
     assert.equal(new Set(prompts).size, prompts.length, `Repeated ${language} question`);
   }
   // The bank must continue to include each of the ten numbered manual sections.
-  const sections = [[7,8],[9,13],[15,19],[21,29],[31,38],[39,41],[43,49],[51,53],[55,58],[59,63]];
+  const sections = [[7,8],[9,13],[15,19],[21,29],[31,38],[39,42],[45,51],[53,55],[57,60],[61,65]];
   for (const [first,last] of sections) assert.ok(questions.some(q => q.page >= first && q.page <= last), `Missing section ${first}–${last}`);
 });
 
@@ -79,4 +79,24 @@ test('revised threshold questions explicitly ask for minimums in both languages'
   }
   assert.equal(questions.find(q => q.id === 106).en.a[0], '25 miles per hour or less');
   assert.ok(!questions.find(q => q.id === 106).en.a.includes('No more than 70 miles per hour'));
+});
+
+test('2026 migration retains known Spanish-manual references and unambiguous prompts', () => {
+  const expected = { 20: 44, 22: 45, 24: 45, 70: 41, 72: 47, 75: 49, 76: 48, 78: 46, 80: 53, 82: 54, 85: 55, 92: 60, 93: 61, 110: 62, 114: 64, 126: 65, 176: 39, 186: 47, 200: 58, 202: 59 };
+  for (const [id, page] of Object.entries(expected)) assert.equal(questions.find(q => q.id === Number(id)).page, page, `Question ${id}`);
+  assert.match(questions.find(q => q.id === 51).en.q, /intersection/);
+  for (const lang of ['en', 'es']) assert.match(questions.find(q => q.id === 176)[lang].q, /minimum|mínima/i);
+});
+
+test('review index matches current bilingual records', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const { createHash } = await import('node:crypto');
+  const rows = (await readFile(new URL('../docs/QUESTION_REVIEW_INDEX.csv', import.meta.url), 'utf8')).trim().split('\n');
+  assert.equal(rows.shift(), 'id,printed_page,record_sha256');
+  assert.equal(rows.length, questions.length);
+  for (const [i, row] of rows.entries()) {
+    const q = questions[i];
+    const digest = createHash('sha256').update(JSON.stringify(q)).digest('hex');
+    assert.equal(row, `${q.id},${q.page},${digest}`, `Review index needs updating for ${q.id}`);
+  }
 });

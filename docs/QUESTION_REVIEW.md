@@ -1,21 +1,15 @@
-# Question review in progress
+# Review against the Spanish October 2026 manual
 
-The 210 bilingual questions were originally based on the October 2025 manual; the page references in the app still refer to that edition. A complete question-by-question audit against the Spanish October 2026 manual has **not** been completed. Automated tests check record structure and sampling, not factual accuracy or translation fidelity.
+The sole content reference for this review is the uploaded Spanish October 2026 Maryland Driver's Manual. The PDF is not redistributed. The bank's 210 original bilingual records (IDs 0–209) were compared with their cited printed pages, including each prompt, the four choices, and the English and Spanish wording. The comparison is a manual editorial review, not an official MVA certification or a guarantee that the app covers every exception in the law. Automated tests validate structure and selected regressions, not the factual interpretation of all 210 questions.
 
-A limited manual spot check against the supplied Spanish October 2026 edition covered these answer topics (the numbers below are question IDs, not page numbers):
+The [review index](QUESTION_REVIEW_INDEX.csv) associates each reviewed ID and printed page with a SHA-256 digest of its complete bilingual record; a changed record needs to be reviewed again. Both languages cite the Spanish edition, including the sign cards. The 53 displayed sign illustrations were checked in the separate [sign recovery review](SIGN_RECOVERY_REVIEW.md); 57 unresolved entries remain outside the card stack.
 
-- Knowledge test, vision, test vehicle and licensing requirements: 0–2, 30–39, 115–116, 121, 132–139 (2026 manual pages 7–11).
-- Following distance, lane use, U-turns and passing: 3–4, 43–47, 49, 117–118, 148 (pages 17–19).
-- Signals, sign shapes and pavement markings: 6–13, 50–59, 151–155, 159–164 (pages 21–25 and 28–29).
-- Headlights, fog, weather and work-zone speed cameras: 14–16, 18, 60–61, 65–66, 98, 166–169, 173 (pages 31–33 and 36).
-- School buses, truck blind spots and bicyclists: 72–73, 75–78, 108–109, 184–187, 189 (pages 46–49).
-- Crash reporting, roadside emergencies, traffic stops and move-over rules: 24–26, 80–87, 191–197 (pages 53–55).
-- Headphones, anti-lock brakes and provisional-license sanctions: 29, 112, 202, 207 (pages 59 and 63).
+## Corrections and qualifications
 
-This spot check does not certify all answer choices, exceptions, translations, or any questions not listed above. The remaining questions and bilingual wording still need individual review against the relevant handbook passages before the bank can be described as fully validated.
+- Updated printed-page references and topic ranges for the 2026 Spanish edition, including sharing the road, crashes and driver responsibilities.
+- Questions 36, 72, 93, 94, 121, 136, 139 and 187 ask explicitly for a minimum; question 106 no longer includes a looser upper limit that could also be true. Question 176 similarly asks for the minimum BAC threshold. Question 16 asks for the maximum following distance triggering the low-beam requirement.
+- Question 51 distinguishes an intersection's flashing red signal from the railroad rule. Question 40 specifies an uncontrolled intersection. Question 27 includes child safety seats. Question 112 distinguishes hearing aids from headphones in Spanish.
+- Question 200 explicitly attributes the unusual wording on page 58 to the manual. Page 58 also discusses administrative notices and hearings; the question is not legal advice and does not attempt to summarize every procedural protection.
+- The practice goal of 22 correct answers is a user-selected app goal, not an assertion about the official passing threshold. The manual states 25 questions and 20 minutes on page 7.
 
-## Additional review and corrections
-
-The 2026 manual's minimums were checked against pages 10–11 (learner/provisional requirements), page 47 (school buses), page 61 (supervisors), and page 38 (slow-moving vehicles). Questions 36, 72, 93, 94, 121, 136, 139 and 187 now explicitly ask for the minimum and use thresholds as choices; previously, looser “at least” distractors could also be true. Question 106 no longer uses a broader upper limit that was also true of a vehicle traveling 25 mph or less. Both languages were updated. Question IDs remain unchanged.
-
-This is still not a complete, item-by-item validation of all 210 questions and all distractors. In particular, the in-app page citations continue to reference the 2025 edition; the attached 2026 Spanish manual uses different page numbers for later sections. Automated tests cannot establish correctness of the handbook interpretation or page citations.
+The review compares the app to the supplied manual, not to subsequent legal changes or other editions. Questions are practice material, not the official examination. Consult the full current handbook and official guidance for complete rules and exceptions.
