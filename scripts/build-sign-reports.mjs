@@ -4,9 +4,9 @@ const e=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&g
 const esc=s=>String(s??'—').replace(/\|/g,'\\|').replace(/\n/g,' ');
 const candidates=data.filter(x=>x.assetPath), verified=data.filter(x=>x.verificationStatus==='VERIFIED');
 const lines=[`# Maryland sign coverage — work in progress`, '',
-`**${data.length} inventory records; ${candidates.length} locally stored FHWA-derived assets; ${verified.length} visually verified against the Spanish October 2026 manual; ${data.filter(x=>x.verificationStatus==='UNRESOLVED').length} unresolved.**`, '',
+`**${data.length} inventory records; ${new Set(candidates.map(x=>x.assetPath)).size} locally stored FHWA-derived assets; ${verified.length} visually verified against the Spanish October 2026 manual; ${data.filter(x=>x.verificationStatus==='UNRESOLVED').length} unresolved.**`, '',
 'The supplied Spanish October 2026 manual was visually inspected, particularly printed pages 24–27. The English October 2026 edition has different printed page numbering (20–23). The inventory also includes traffic signals and generic sign shapes; further review is needed for signs elsewhere in the manual and for exact artwork for unresolved records. No illustrations were extracted from the copyrighted manual.', '',
-'Only verified artwork is shown in cards. Unresolved records display an unavailable message; the two authentic full-sign assets that do not exactly match the blank shape diagrams in the manual are retained for review but not shown as verified illustrations.', '',
+'Only verified artwork is shown in cards. Unresolved records are omitted from the study stack; the two authentic full-sign assets that do not exactly match the blank shape diagrams in the manual are retained for review but not shown as verified illustrations.', '',
 '| Manual item | English 2026 page | Spanish 2026 page | MUTCD code | Local SVG | Source | Verification / issue |', '|---|---:|---:|---|---|---|---|'];
 for(const s of data)lines.push(`| ${esc(s.id)} — ${esc(s.en)} | ${s.manualPage2026} | ${s.manualPage2026Es} | ${esc(s.mutcdCode)} | ${s.assetPath?`[${s.mutcdCode}.svg](../${s.assetPath})`:'—'} | ${s.sourceUrl?`[pinned asset](${s.sourceUrl})`:'—'} | **${s.verificationStatus}** — ${esc(s.verificationNote)} |`);
 writeFileSync('docs/MARYLAND_SIGN_COVERAGE.md',lines.join('\n')+'\n');

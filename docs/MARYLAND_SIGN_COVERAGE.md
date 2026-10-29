@@ -1,10 +1,10 @@
 # Maryland sign coverage — work in progress
 
-**110 inventory records; 54 locally stored FHWA-derived assets; 52 visually verified against the Spanish October 2026 manual; 58 unresolved.**
+**110 inventory records; 54 locally stored FHWA-derived assets; 53 visually verified against the Spanish October 2026 manual; 57 unresolved.**
 
 The supplied Spanish October 2026 manual was visually inspected, particularly printed pages 24–27. The English October 2026 edition has different printed page numbering (20–23). The inventory also includes traffic signals and generic sign shapes; further review is needed for signs elsewhere in the manual and for exact artwork for unresolved records. No illustrations were extracted from the copyrighted manual.
 
-Only verified artwork is shown in cards. Unresolved records display an unavailable message; the two authentic full-sign assets that do not exactly match the blank shape diagrams in the manual are retained for review but not shown as verified illustrations.
+Only verified artwork is shown in cards. Unresolved records are omitted from the study stack; the two authentic full-sign assets that do not exactly match the blank shape diagrams in the manual are retained for review but not shown as verified illustrations.
 
 | Manual item | English 2026 page | Spanish 2026 page | MUTCD code | Local SVG | Source | Verification / issue |
 |---|---:|---:|---|---|---|---|
@@ -100,7 +100,7 @@ Only verified artwork is shown in cards. Unresolved records display an unavailab
 | lane-green — Green arrow: you may use the lane. | 18 | 22 | — | — | — | **UNRESOLVED** — A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending. |
 | lane-yellow-x — Steady yellow X: change lanes as soon as it is safe. | 18 | 22 | — | — | — | **UNRESOLVED** — A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending. |
 | lane-flashing-x — Flashing yellow X: the lane may be used for a left turn; opposing traffic may share it. | 18 | 22 | — | — | — | **UNRESOLVED** — A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending. |
-| lane-two-arrows — Opposing left-turn arrows: the lane is shared for left turns. | 18 | 22 | — | — | — | **UNRESOLVED** — A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending. |
+| lane-two-arrows — Opposing left-turn arrows: the lane is shared for left turns. | 18 | 22 | R03-09B | [R03-09B.svg](../src/assets/traffic-signs/R03-09B.svg) | [pinned asset](https://github.com/whizy76/mutcd-svg/blob/e471f83eb6ec5cc00a78ff96d94f2194926ed71c/svg/R03-09B.svg) | **VERIFIED** — The same R03-09B artwork already in the local library matches the center-lane two-way left-turn illustration on Spanish 2026 manual pages 22 and 25; arrows, legend and layout visually checked. |
 | beacon-dark — Pedestrian hybrid beacon dark: proceed with caution. | 19 | 23 | — | — | — | **UNRESOLVED** — A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending. |
 | beacon-flashing-yellow — Pedestrian hybrid beacon flashing yellow: slow down. | 19 | 23 | — | — | — | **UNRESOLVED** — A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending. |
 | beacon-yellow — Pedestrian hybrid beacon steady yellow: prepare to stop. | 19 | 23 | — | — | — | **UNRESOLVED** — A traffic or pedestrian signal is not a road-sign SVG in the source collection; exact authorized artwork and appropriately licensed artwork is pending. |

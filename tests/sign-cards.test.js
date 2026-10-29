@@ -68,6 +68,10 @@ test('newly sourced signs are verified and use the correct individual assets', (
     assert.equal(card.mutcdCode, code);
     assert.match(signArtwork(card, 'en'), /<img /);
   }
+  const sharedLane = signCards.find(s => s.id === 'lane-two-arrows');
+  assert.equal(sharedLane?.mutcdCode, 'R03-09B');
+  assert.equal(sharedLane?.verificationStatus, 'VERIFIED');
+  assert.match(signArtwork(sharedLane, 'en'), /<img /);
   // A right-pointing sign must not silently replace the left-pointing example.
   assert.equal(signCards.find(s => s.id === 'left-only'), undefined);
   assert.equal(json.find(s => s.id === 'left-only').verificationStatus, 'UNRESOLVED');
