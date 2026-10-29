@@ -123,15 +123,15 @@ const symbols={
  'left-only':left+'<text x="50" y="91" text-anchor="middle" font-size="14" font-weight="bold">ONLY</text>',
  'no-parking':'<text x="50" y="72" text-anchor="middle" font-size="65" font-weight="bold">P</text>',
  'keep-right':'<path d="M20 25h22q0 45-11 45T20 25z"/>'+`<g transform="translate(23 -1) scale(.75 1)">${arrow}</g>`,
- 'center-turn':`<g transform="translate(-6 9) scale(.65)">${left}</g><g transform="translate(103 98) rotate(180) scale(.65)">${left}</g><text x="50" y="17" text-anchor="middle" font-size="10" font-weight="bold">CENTER LANE</text><text x="50" y="93" text-anchor="middle" font-size="12" font-weight="bold">ONLY</text>`,
- 'bike-lane':bike+'<text x="50" y="95" text-anchor="middle" font-size="13" font-weight="bold">BIKE LANE</text>',
+ 'center-turn':`<g transform="translate(8 20) scale(.45)">${left}</g><g transform="translate(92 80) rotate(180) scale(.45)">${left}</g><text x="50" y="18" text-anchor="middle" font-size="8" font-weight="bold">CENTER LANE</text><text x="50" y="90" text-anchor="middle" font-size="10" font-weight="bold">ONLY</text>`,
+ 'bike-lane':`<rect x="13" y="10" width="74" height="58" fill="#171717"/><g color="white" transform="translate(10 5) scale(.8)">${bike}</g><text x="50" y="84" text-anchor="middle" font-size="11" font-weight="bold">BIKE LANE</text>`,
  'sharp-right':right,'curve-right':'<path d="M39 78V58q0-23 24-27v-9l20 16-19 17v-9q-14 3-14 17v15z"/>',
  'reverse-turn':'<path d="M36 80V64q0-13 14-13h8v-8h-9q-13 0-13-13V18h10v12q0 4 5 4h10V23l17 16-17 16v-7h-9q-6 0-6 7v25z"/>',
  'winding':'<path d="M44 81c-9-13 11-17 0-27S38 38 48 32V23l18 15-18 15v-9c-8 5 11 13 6 23-3 6-6 7-3 14z"/>',
  'merge':arrow+'<path d="M18 73l7 6 20-23-7-8z"/>',
  'lane-ends':'<path d="M24 22h7v58h-7z M61 21h7v26l9 12v21h-7V62l-9-12z"/>',
- 'divided-start':'<path d="M24 76V50q0-9-8-17l7-7q11 10 11 24v26zM76 24v26q0 9 8 17l-7 7Q66 64 66 50V24z"/><path d="M44 30h12v40H44z"/>'+`<g transform="translate(-10 3) scale(.6)">${arrow}</g><g transform="translate(110 97) rotate(180) scale(.6)">${arrow}</g>`,
- 'divided-end':'<path d="M24 76V50q0-9-8-17l7-7q11 10 11 24v26zM76 24v26q0 9 8 17l-7 7Q66 64 66 50V24z"/><path d="M44 30h12v40H44z"/>',
+ 'divided-start':'<path d="M44 32h12v40H44z M25 73V52q0-10 10-20l-6-6Q17 37 17 51v22h-8l13 13 13-13z M75 27v21q0 10-10 20l6 6q12-11 12-25V27h8L78 14 65 27z"/>',
+ 'divided-end':'<path d="M44 32h12v40H44z M25 27v21q0 10 10 20l-6 6Q17 63 17 49V27H9l13-13 13 13z M75 73V52q0-10-10-20l6-6q12 11 12 25v22h8L78 86 65 73z"/>',
  'crossroad':'<path d="M44 20h12v24h24v12H56v24H44V56H20V44h24z"/>',
  't-intersection':'<path d="M20 25h60v12H56v43H44V37H20z"/>',
  'side-road':'<path d="M40 20h12v24h24v12H52v24H40z"/>',
@@ -152,7 +152,7 @@ const symbols={
  'accessible':'<text x="50" y="18" text-anchor="middle" font-size="9" font-weight="bold">RESERVED</text><text x="50" y="30" text-anchor="middle" font-size="9" font-weight="bold">PARKING</text><circle cx="49" cy="45" r="5"/><path d="M47 52h8l3 12h10l6 11-4 3-6-9H54l-4-9-2 7a14 14 0 1 1-6-15v6a8 8 0 1 0 3 8z"/>',
 };
 function textLines(art,color='#111') {
- const lines=art.split('|'); const size=lines.some(x=>x.length>12)?10:lines.length>3?12:lines.length===1?24:16;
+ const lines=art.split('|'); const base=lines.length>3?12:lines.length===1?24:16; const size=Math.min(base, 105 / Math.max(...lines.map(line=>line.length))); 
  return `<text x="50" y="${50-(lines.length-1)*size*.62+size*.35}" text-anchor="middle" fill="${color}" font-family="Arial,sans-serif" font-weight="bold" font-size="${size}">${lines.map((v,i)=>`<tspan x="50" dy="${i?size*1.25:0}">${v}</tspan>`).join('')}</text>`;
 }
 export function signArtwork(card){
@@ -184,7 +184,7 @@ export function signArtwork(card){
  else if(art==='pennant'){bg='<path d="M5 8L96 50 5 92z" fill="#ffce40" stroke="#222" stroke-width="2"/>';content='<text x="10" y="35" font-size="12" font-weight="bold">NO</text><text x="10" y="49" font-size="10" font-weight="bold">PASSING</text><text x="10" y="62" font-size="11" font-weight="bold">ZONE</text>';}
  else if(art==='do-not-enter'){bg='<rect x="9" y="9" width="82" height="82" rx="4" fill="white" stroke="#222"/><circle cx="50" cy="50" r="39" fill="#bd1e32"/>';content='<path d="M18 46h64v10H18z" fill="white"/><text x="50" y="37" text-anchor="middle" fill="white" font-size="12" font-weight="bold">DO NOT</text><text x="50" y="71" text-anchor="middle" fill="white" font-size="13" font-weight="bold">ENTER</text>';}
  else if(art==='wrong-way'){bg='<rect x="5" y="19" width="90" height="62" rx="3" fill="#bd1e32" stroke="#222"/>';content=textLines('WRONG|WAY','#fff');}
- else if(art==='interstate'){bg='<path d="M8 19Q28 27 50 16Q72 27 92 19V55Q89 81 50 95 11 81 8 55z" fill="#24528c" stroke="#222"/><path d="M8 19Q28 27 50 16Q72 27 92 19v18H8z" fill="#bf1e32"/>';content=textLines('INTERSTATE|526','#fff');}
+ else if(art==='interstate'){bg='<path d="M8 19Q28 27 50 16Q72 27 92 19V55Q89 81 50 95 11 81 8 55z" fill="#24528c" stroke="#222"/><path d="M8 19Q28 27 50 16Q72 27 92 19v18H8z" fill="#bf1e32"/>';content='<text x="50" y="32" text-anchor="middle" fill="white" font-size="8" font-weight="bold">INTERSTATE</text><text x="50" y="68" text-anchor="middle" fill="white" font-size="29" font-weight="bold">526</text>';}
  else if(art==='us-route'){bg='<path d="M10 26L20 14Q35 21 50 12Q65 21 80 14L90 26 84 75 50 91 16 75z" fill="white" stroke="#222" stroke-width="3"/>';content=textLines('US|50');}
  else {
    let diamond=(category==='warning'&&!['advisory-speed','exit-speed','trail'].includes(id))||(category==='work'&&['flagger','road-work'].includes(id));
@@ -192,14 +192,27 @@ export function signArtwork(card){
    if(['school','school-bus'].includes(id)) fill='#d5e82c';
    if(id==='accessible-parking') fg='#007c50';
    if(['services'].includes(category)||['park-ride','mile','overhead-dest','destination','services','ezpass'].includes(id))fg='#fff';
-   if(id==='school') bg=`<path d="M50 4L92 34V90H8V34z" fill="${fill}" stroke="#222" stroke-width="2"/>`;
+   if(id==='school') bg=`<path d="M50 4L88 31V74H12V31z" fill="${fill}" stroke="#222" stroke-width="2"/><rect x="12" y="78" width="76" height="17" fill="${fill}" stroke="#222" stroke-width="2"/><text x="50" y="91" font-size="11" text-anchor="middle" font-weight="bold">SCHOOL</text>`;
    else if(diamond)bg=`<path d="M50 4L96 50 50 96 4 50z" fill="${fill}" stroke="#222" stroke-width="2"/>`;
+   else if(['detour','last-exit','overhead-dest','destination','park-ride','services'].includes(id))bg=`<rect x="4" y="22" width="92" height="56" rx="3" fill="${fill}" stroke="#222" stroke-width="2"/>`;
    else bg=`<rect x="8" y="6" width="84" height="88" rx="3" fill="${fill}" stroke="#222" stroke-width="2"/>`;
    if(art==='stop-ahead')content=`<g transform="translate(24 0) scale(.52)">${arrow}</g><polygon points="40,51 60,51 68,59 68,73 60,81 40,81 32,73 32,59" fill="#c72036" stroke="white"/>`;
    else if(art==='yield-ahead')content=`<g transform="translate(24 0) scale(.52)">${arrow}</g><path d="M28 52h44L50 82z" fill="#c72036" stroke="white" stroke-width="2"/><path d="M40 58h20L50 72z" fill="white"/>`;
    else if(art==='signal-ahead')content='<rect x="38" y="18" width="24" height="64" rx="3"/><circle cx="50" cy="29" r="8" fill="#d32032"/><circle cx="50" cy="50" r="8" fill="#ffc52e"/><circle cx="50" cy="71" r="8" fill="#129955"/>';
-   else if(id==='one-way')content=textLines('ONE|WAY|⬅');
+   else if(id==='speed-limit')content='<text x="50" y="27" text-anchor="middle" font-size="13" font-weight="bold">SPEED</text><text x="50" y="41" text-anchor="middle" font-size="13" font-weight="bold">LIMIT</text><text x="50" y="78" text-anchor="middle" font-size="37" font-weight="bold">50</text>';
+   else if(id==='exit-speed')content=`<text x="50" y="23" text-anchor="middle" font-size="13" font-weight="bold">EXIT</text><path d="M8 29h84" stroke="#222" stroke-width="2"/><g transform="translate(23 23) scale(.45)">${right}</g><text x="50" y="79" text-anchor="middle" font-size="24" font-weight="bold">25</text><text x="50" y="90" text-anchor="middle" font-size="8" font-weight="bold">MPH</text>`;
+   else if(id==='detour')content='<text x="50" y="42" text-anchor="middle" font-size="15" font-weight="bold">DETOUR</text><path d="M20 53h39V47l20 12-20 12v-6H20z"/>';
+   else if(id==='overhead-dest')content='<text x="26" y="35" text-anchor="middle" fill="white" font-size="6" font-weight="bold">I-595 EAST</text><text x="26" y="44" text-anchor="middle" fill="white" font-size="6" font-weight="bold">Annapolis</text><text x="73" y="35" text-anchor="middle" fill="white" font-size="6" font-weight="bold">197</text><text x="73" y="44" text-anchor="middle" fill="white" font-size="6" font-weight="bold">Mitchellville</text><path d="M50 24v51" stroke="white" stroke-width="1"/><g fill="white" transform="translate(5 37) scale(.35)">'+arrow+'</g><g fill="white" transform="translate(55 37) scale(.35)">'+right+'</g>';
+   else if(id==='one-way')content='<text x="50" y="31" text-anchor="middle" font-size="17" font-weight="bold">ONE</text><text x="50" y="50" text-anchor="middle" font-size="17" font-weight="bold">WAY</text><path d="M20 69l19-13v7h38v12H39v7z"/>';
+   else if(id==='left-yield')content='<text x="50" y="25" text-anchor="middle" font-size="9" font-weight="bold">LEFT TURN</text><text x="50" y="39" text-anchor="middle" font-size="12" font-weight="bold">YIELD</text><text x="50" y="53" text-anchor="middle" font-size="9" font-weight="bold">ON GREEN</text><circle cx="50" cy="72" r="10" fill="#008052"/>';
+   else if(id==='no-turn-red')content='<text x="50" y="25" text-anchor="middle" font-size="11" font-weight="bold">NO</text><text x="50" y="40" text-anchor="middle" font-size="11" font-weight="bold">TURN</text><text x="50" y="55" text-anchor="middle" font-size="11" font-weight="bold">ON <tspan fill="#c51b30">RED</tspan></text><circle cx="50" cy="73" r="8" fill="#c51b30"/>';
+   else if(id==='straight-only')content=`<g transform="translate(22 3) scale(.56)">${arrow}</g><text x="50" y="85" text-anchor="middle" font-size="13" font-weight="bold">ONLY</text>`;
+   else if(id==='right-only')content=`<g transform="translate(13 2) scale(.75)">${right}</g><text x="50" y="86" text-anchor="middle" font-size="13" font-weight="bold">ONLY</text>`;
+   else if(id==='straight-or-right')content=`<g transform="translate(1 3) scale(.7)">${arrow}</g><g transform="translate(26 20) scale(.68)">${right}</g>`;
+   else if(id==='lane-directions')content=`<g transform="translate(3 12) scale(.42)">${left}</g><g transform="translate(29 12) scale(.42)">${arrow}</g><g transform="translate(55 12) scale(.42)">${right}</g><text x="50" y="79" text-anchor="middle" font-size="8" font-weight="bold">ONLY   ONLY   ONLY</text>`;
    else content=symbols[art]||textLines(art,fg);
+   if(id==='school') content=`<g transform="translate(10 1) scale(.8)">${content}</g>`;
+   if(diamond) content=`<g transform="translate(16 16) scale(.68)">${content}</g>`;
    if(['no-right','no-left','no-u','no-parking'].includes(art)) content+='<circle cx="50" cy="50" r="38" fill="none" stroke="#c51b30" stroke-width="6"/><path d="M23 23l54 54" stroke="#c51b30" stroke-width="6"/>';
  }
  return `<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false"><g color="${fg}" fill="${fg}">${bg}${content}</g></svg>`;
