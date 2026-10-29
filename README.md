@@ -15,7 +15,7 @@ The manual states that the knowledge test has 25 questions and a 20-minute limit
 Abre [Permit Path](https://md-learner-driver-practice.vercel.app/) en tu navegador. El idioma inicial es español; usa el botón **ES/EN** para cambiarlo y el botón de tema para alternar entre claro y oscuro.
 
 1. En **Temas de estudio**, elige un tema para practicar sus preguntas y consultar las páginas del manual.
-2. En **Tarjetas de señales**, filtra por categoría y toca o haz clic en la tarjeta para girarla y revelar su significado. Algunas tarjetas muestran SVG auténticos del FHWA comparados visualmente con el manual español de octubre de 2026. Las tarjetas sin arte confirmado indican que la ilustración no está disponible. Las referencias de tarjetas son del manual de 2026 (con páginas distintas en español e inglés); el banco de preguntas sigue usando el de 2025. También puedes usar Enter o la barra espaciadora. Usa **Anterior** y **Siguiente señal** para recorrerlas. Si tu dispositivo tiene activada la opción de movimiento reducido, el cambio es inmediato.
+2. En **Tarjetas de señales**, filtra por categoría y toca o haz clic en la tarjeta para girarla y revelar su significado. Las tarjetas muestran solo ilustraciones auténticas del FHWA comparadas visualmente con el manual español de octubre de 2026. Las entradas sin arte confirmado se omiten de la colección de estudio. Las referencias de tarjetas son del manual de 2026 (con páginas distintas en español e inglés); el banco de preguntas sigue usando el de 2025. También puedes usar Enter o la barra espaciadora. Usa **Anterior** y **Siguiente señal** para recorrerlas. Si tu dispositivo tiene activada la opción de movimiento reducido, el cambio es inmediato.
 3. En **Exámenes de práctica**, elige una prueba de 25 preguntas con límite de 20 minutos o una sin límite. Al terminar, revisa tus respuestas y las referencias al manual. La meta de práctica es 22 respuestas correctas.
 4. En **Mi progreso**, consulta tus resultados y tus áreas de mejora, o borra el progreso guardado. **Información general** contiene por separado el tema de obtener la licencia.
 
@@ -23,7 +23,7 @@ El progreso se guarda en este navegador y dispositivo; no se sincroniza entre di
 
 ## Sign artwork and verification
 
-The [coverage report](docs/MARYLAND_SIGN_COVERAGE.md) and [source notes](docs/TRAFFIC_SIGN_SOURCES.md) describe the current limitations and licensing. The [visual contact sheet](docs/sign-contact-sheet.html) and its [PNG preview](docs/sign-contact-sheet.png) show locally stored candidate assets. The supplied Spanish October 2026 manual was visually reviewed: 39 sign assets match its illustrations, while other entries remain unresolved.
+The [coverage report](docs/MARYLAND_SIGN_COVERAGE.md) and [source notes](docs/TRAFFIC_SIGN_SOURCES.md) describe the current limitations and licensing. The [visual contact sheet](docs/sign-contact-sheet.html) and its [PNG preview](docs/sign-contact-sheet.png) show locally stored candidate assets. The supplied Spanish October 2026 manual was visually reviewed: 53 sign cards match its illustrations, while other entries remain unresolved.
 
 ## Run locally
 

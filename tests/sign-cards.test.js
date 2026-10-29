@@ -8,7 +8,9 @@ import {signCards,signCategories,signArtwork} from '../src/sign-cards.js';
 const json = JSON.parse(readFileSync(new URL('../src/data/maryland-signs.json', import.meta.url)));
 
 test('catalog is synchronized, bilingual and explicit about verification', () => {
-  assert.deepEqual(signCards, json);
+  assert.deepEqual(signCards, json.filter(s => s.verificationStatus === 'VERIFIED' && s.assetPath));
+  assert.ok(signCards.length > 0);
+  for (const category of signCategories.filter(c => c.id !== 'all')) assert.ok(signCards.some(s => s.category === category.id));
   assert.equal(new Set(signCards.map(s => s.id)).size, signCards.length);
   const categories = new Set(signCategories.map(c => c.id));
   for (const s of signCards) {
@@ -22,7 +24,7 @@ test('catalog is synchronized, bilingual and explicit about verification', () =>
 });
 
 test('all sourced assets are intact, local, valid SVG and contain no executable or external content', () => {
-  for (const s of signCards.filter(s => s.assetPath)) {
+  for (const s of json.filter(s => s.assetPath)) {
     const path = new URL('../' + s.assetPath, import.meta.url);
     assert.ok(existsSync(path), `${s.id}: missing asset`);
     const data = readFileSync(path);
@@ -51,4 +53,26 @@ test('all sourced assets are intact, local, valid SVG and contain no executable 
     assert.ok(root);
     if (s.verificationStatus === 'VERIFIED') assert.match(signArtwork(s, 'en'), /<img /);
   }
+});
+
+test('newly sourced signs are verified and use the correct individual assets', () => {
+  const expected = {
+    hospital:'D09-02', fuel:'D09-07', food:'D09-08', lodging:'D09-09',
+    airport:'I03-05', train:'I03-07', mile:'D10-01', detour:'M04-09',
+    'straight-only':'R03-05A', 'straight-or-right':'R03-06',
+    'lane-directions':'R03-08B', 'hov-overhead':'R03-14', 'last-exit':'W16-16P'
+  };
+  for (const [id, code] of Object.entries(expected)) {
+    const card = signCards.find(s => s.id === id);
+    assert.equal(card?.verificationStatus, 'VERIFIED');
+    assert.equal(card.mutcdCode, code);
+    assert.match(signArtwork(card, 'en'), /<img /);
+  }
+  const sharedLane = signCards.find(s => s.id === 'lane-two-arrows');
+  assert.equal(sharedLane?.mutcdCode, 'R03-09B');
+  assert.equal(sharedLane?.verificationStatus, 'VERIFIED');
+  assert.match(signArtwork(sharedLane, 'en'), /<img /);
+  // A right-pointing sign must not silently replace the left-pointing example.
+  assert.equal(signCards.find(s => s.id === 'left-only'), undefined);
+  assert.equal(json.find(s => s.id === 'left-only').verificationStatus, 'UNRESOLVED');
 });

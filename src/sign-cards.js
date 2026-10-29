@@ -1,14 +1,14 @@
 import catalog from './data/maryland-signs.js';
 
-// The catalog exposes unresolved records as well as sourced candidates. A
-// candidate is not called verified until checked against the 2026 illustration.
-export const signCards = catalog;
-export const signCategories = [
+// Keep the full inventory for provenance, but never put unresolved images in the study stack.
+export const signCards = catalog.filter(card => card.verificationStatus === 'VERIFIED' && card.assetPath);
+const categories = [
   {id:'all',en:'All',es:'Todas'}, {id:'shapes',en:'Sign shapes',es:'Formas de señales'}, {id:'regulatory',en:'Regulatory',es:'Reglamentarias'},
   {id:'warning',en:'Warning',es:'Advertencia'}, {id:'work',en:'Work zones',es:'Obras'},
   {id:'guide',en:'Guide & routes',es:'Guía y rutas'}, {id:'services',en:'Services',es:'Servicios'},
   {id:'signals',en:'Traffic signals',es:'Semáforos'}
 ];
+export const signCategories = categories.filter(c => c.id === 'all' || signCards.some(card => card.category === c.id));
 
 export function signArtwork(card, lang = 'es') {
   if (card.verificationStatus !== 'VERIFIED' || !card.mutcdCode) {
